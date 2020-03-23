@@ -1,18 +1,18 @@
-package api.util.function;
+package api.java.util.function;
 
 import org.junit.Test;
 
 import java.util.Objects;
 import java.util.function.BiConsumer;
-import java.util.function.BiFunction;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
-public class BiFunctionTest {
+
+public class BiConsumerTest {
 
     /**
      * A Consumer can mutate a reference to an object.
-     * A consummer does consume two objects.
+     * A consummer does consume two objects and returns nothing.
      */
 
     @Test
@@ -26,12 +26,6 @@ public class BiFunctionTest {
         biConsumer.accept(p1, p2); // p1 is mutated and p2 are mutated
         assertThat(p1).isEqualTo(new Person("p1"));
         assertThat(p2).isEqualTo(new Person("p2"));
-    }
-
-    @Test
-    public void biFunctionSumIntegers() {
-        BiFunction<Integer, Integer, Integer> biFunction = (i1, i2) -> i1 + i2;
-        assertThat(biFunction.apply(1, 2)).isEqualTo(3);
     }
 
     class Person {

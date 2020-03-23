@@ -1,4 +1,4 @@
-package api.util;
+package api.java.util;
 
 import org.junit.Test;
 

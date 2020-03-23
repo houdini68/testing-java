@@ -1,4 +1,4 @@
-package api.com.google.base.joiner;
+package api.com.google.base;
 
 import com.google.common.base.Joiner;
 import com.google.common.collect.Maps;

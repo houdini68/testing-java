@@ -1,9 +1,7 @@
 package api.com.google.base;
 
-import com.google.common.base.CharMatcher;
 import com.google.common.base.Splitter;
 import com.google.common.collect.Maps;
-import org.junit.Ignore;
 import org.junit.Test;
 
 import java.util.Map;
@@ -13,24 +11,24 @@ import static org.assertj.core.api.Assertions.assertThat;
 
 public class SplitterTest {
     @Test
-    public void string_split_does_not_give_us_some_control() {
+    public void When_splitOfString_Expect_NoControl() {
         String testString = "a,b,,c,d,,";
         String[] items = testString.split(",");
         assertThat(items)
                 .containsExactly("a", "b", "", "c", "d");
-        // missing item replaced by empty string
+        // missing items replaced by empty string
         // missing items at the end were removed
     }
 
     @Test
-    public void splitter_some_items_missing() {
+    public void When_EmptyStrings() {
         assertThat(Splitter.on('|')
                 .split("a|b||c|"))
                 .containsExactly("a", "b", "", "c", "");
     }
 
     @Test
-    public void splitter_based_on_regex() {
+    public void When_Regex() {
         Pattern digits = Pattern.compile("\\d+");
         assertThat(Splitter.on(digits)
                 .omitEmptyStrings()
@@ -39,7 +37,7 @@ public class SplitterTest {
     }
 
     @Test
-    public void splitterOmitEmptyStrings() {
+    public void When_omitEmptyStrings_Expect_EmptyStringsRemoved() {
         assertThat(Splitter.on('|')
                 .omitEmptyStrings()
                 .split("a|b|c|||"))
@@ -47,7 +45,7 @@ public class SplitterTest {
     }
 
     @Test
-    public void testSplitter() {
+    public void When_KeyValues_Expect_Map() {
         String keyValues = "key1=value1#key2=value2#key3=value3#key4=value4";
         Map<String, String> expectedMap = Maps.newLinkedHashMap();
         expectedMap.put("key1", "value1");
@@ -59,14 +57,4 @@ public class SplitterTest {
                 .split(keyValues))
                 .isEqualTo(expectedMap);
     }
-
-//    @Test
-//    public void test() {
-//        Pattern spaces = Pattern.compile("\\s+");
-//        assertThat(Splitter.on('|')
-//                .trimResults(CharMatcher.is())
-//                .split("a|b|c|||"))
-//                .containsExactly("a", "b", "c");
-//    }
-
 }

@@ -28,7 +28,7 @@ I have decided to document the classes that a modern developer has a great chanc
 
 ## com.google.common.base
 
-##### FunctionsTest
+##### [FunctionsTest](src/test/java/api/com/google/common/base/FunctionsTest.java)
 ##### FunctionTest
 ##### JoinerTest
 ##### SplitterTest

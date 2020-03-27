@@ -42,7 +42,7 @@ public class FluentIterableTest {
                 FluentIterable
                         .from(persons)
                         .transform(input -> Joiner.on('#')
-                                .join(input.getLastName(), input.getFirstName(), input.getAge()))
+                                                .join(input.getLastName(), input.getFirstName(), input.getAge()))
                         .toList();
         assertThat(transformedPersonList.get(1)).isEqualTo("Flintstone#Fred#32");
     }

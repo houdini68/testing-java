@@ -12,6 +12,9 @@ I have decided to document the classes that a modern developer has a great chanc
 
 Each time I visit a site (Stackoverflow) to get some help on programming or I made some investigations on a specific topic I will try to make a test that will be documented here.
 
+Not yet documented:
+Spring framework, Mockito, AssertJ,...
+
 # What is tested:
 
 # Java

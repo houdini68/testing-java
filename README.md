@@ -13,7 +13,7 @@ I have decided to document the classes that a modern developer has a great chanc
 Each time I visit a site (Stackoverflow) to get some help on programming or I made some investigations on a specific topic I will try to make a test that will be documented here.
 
 Not yet documented:
-Spring framework, Mockito, AssertJ,...
+Java 13, Spring framework (Spring Boot), JPA (Hibernate), Mockito, AssertJ,...
 
 It is an Apache Maven project and it was written using Intellij Idea.
 

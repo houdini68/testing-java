@@ -23,36 +23,36 @@ Rudy Vissers(Belgium). English is not my mother tongue.
 
 ## java.util
 
-##### MapTest
+##### [MapTest](src/test/java/api/java/util/MapTest.java)
 
 ## java.util.function
 
-##### BiConsumerTest
+##### [BiConsumerTest](src/test/java/api/java/util/function/BiConsumerTest.java)
 
-##### BiFunctionTest
+##### [BiFunctionTest](src/test/java/api/java/util/function/BiFunctionTest.java)
 
 # Guava
 
 ## com.google.common.base
 
 ##### [FunctionsTest](src/test/java/api/com/google/common/base/FunctionsTest.java)
-##### FunctionTest
-##### JoinerTest
-##### SplitterTest
+##### [FunctionTest](src/test/java/api/com/google/common/base/FunctionTest.java) 
+##### [JoinerTest](src/test/java/api/com/google/common/base/JoinerTest.java)
+##### [SplitterTest](src/test/java/api/com/google/common/base/SplitterTest.java)
 
 ## com.google.common.collect
 
-##### FluentIterableTest
-##### ImmutableMapTest
+##### [FluentIterableTest](src/test/java/api/com/google/common/collect/FluentIterableTest.java)
+##### [ImmutableMapTest](src/test/java/api/com/google/common/collect/ImmutableMapTest.java)
 
 # Non compliant code
 
 ## non_compliant_code
 
-##### NonNullValuesShouldNotBeSeToNull
+##### [NonNullValuesShouldNotBeSeToNull](src/main/java/non_compliant_code/NonNullValuesShouldNotBeSeToNull.java)
 
 # Model
 
 ## model
 
-##### Person
+##### [Person](src/main/java/model/Person.java)

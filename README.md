@@ -10,6 +10,8 @@ Javadoc is sometimes complicated. Not easy to read. You want an example.
 
 I have decided to document the classes that a modern developer has a great chance to meet at customer site.
 
+Each time I visit Stackoverflow to get some help on programming I will try to make a test that will be documented here.
+
 # What is tested:
 
 # Java

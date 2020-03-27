@@ -1,6 +1,4 @@
-# Testing Java,Guava,...
-
-By Rudy Vissers from Belgium. English is not my mother tongue.
+# Testing Java,Spring framework,Guava,JPA(Hibernate),Mockito,AssertJ,...
 
 Testing the apis needed by a modern Java developer.
 
@@ -16,6 +14,8 @@ Not yet documented:
 Java 13, Spring framework (Spring Boot), JPA (Hibernate), Mockito, AssertJ,...
 
 It is an Apache Maven project and it was written using Intellij Idea.
+
+Rudy Vissers(Belgium). English is not my mother tongue.
 
 # What is tested?
 

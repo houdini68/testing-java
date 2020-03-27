@@ -17,7 +17,7 @@ Spring framework, Mockito, AssertJ,...
 
 It is an Apache Maven project and it was written using Intellij Idea.
 
-# What is tested???
+# What is tested?
 
 # Java
 

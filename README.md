@@ -15,6 +15,8 @@ Each time I visit a site (Stackoverflow) to get some help on programming or I ma
 Not yet documented:
 Spring framework, Mockito, AssertJ,...
 
+Yea, it is an Apache Maven project and it was written using Intellij Idea.
+
 # What is tested:
 
 # Java

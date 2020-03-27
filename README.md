@@ -1,4 +1,4 @@
-# Testing Java,Spring framework,Guava,JPA(Hibernate),Mockito,AssertJ,...
+# Testing the Java ecosystem
 
 Testing the apis needed by a modern Java developer.
 

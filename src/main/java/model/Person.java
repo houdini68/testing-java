@@ -9,9 +9,6 @@ public class Person {
     private String sex;
     private String nrn;
 
-    private Person() {
-    }
-
     public Person(String firstName, String lastName, int age, String sex, String nrn) {
         this.firstName = firstName;
         this.lastName = lastName;

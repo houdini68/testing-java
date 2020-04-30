@@ -55,4 +55,4 @@ Rudy Vissers(Belgium). English is not my mother tongue.
 
 ## model
 
-##### [Person](src/main/java/model/Person.java)
+##### [PersonV1](src/main/java/model/PersonV1.java)

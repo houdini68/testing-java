@@ -2,19 +2,23 @@ package model;
 
 import java.util.Objects;
 
-public class Person {
+public class PersonV1 {
     private String firstName;
     private String lastName;
     private int age;
     private String sex;
     private String nrn;
 
-    public Person(String firstName, String lastName, int age, String sex, String nrn) {
+    public PersonV1(String firstName, String lastName, int age, String sex, String nrn) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.age = age;
         this.sex = sex;
         this.nrn = nrn;
+    }
+
+    public PersonV1() {
+
     }
 
     public String getFirstName() {
@@ -65,8 +69,8 @@ public class Person {
         if (o == null || getClass() != o.getClass()) {
             return false;
         }
-        Person person = (Person) o;
-        return nrn.equals(person.nrn);
+        PersonV1 personV1 = (PersonV1) o;
+        return nrn.equals(personV1.nrn);
     }
 
     @Override

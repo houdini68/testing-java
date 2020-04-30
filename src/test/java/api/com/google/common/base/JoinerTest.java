@@ -10,7 +10,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 
 public class JoinerTest {
     @Test
-    public void joinerOnStrings() {
+    public void givenJoinerOnStrings_thenOK() {
 
         assertThat(Joiner.on("|")
                 .join("a", "b", "c"))
@@ -28,7 +28,7 @@ public class JoinerTest {
     }
 
     @Test(expected = UnsupportedOperationException.class)
-    public void joinerImmutable() {
+    public void givenJoinerImmutable_whenMethodUseForNullAfterCreation_thenNoEffect() {
         Joiner joiner = Joiner.on("|").skipNulls();
         joiner.useForNull("not_used_because_joiner_is_immutable");
         assertThat(joiner
@@ -37,7 +37,7 @@ public class JoinerTest {
     }
 
     @Test
-    public void joinerOnStringBuilder() {
+    public void givenJoinerOnStringBuilder_thenOK() {
         StringBuilder stringBuilder = new StringBuilder();
         Joiner joiner = Joiner.on("|").skipNulls();
         joiner.appendTo(stringBuilder, "a", "b", "c", null);
@@ -47,7 +47,7 @@ public class JoinerTest {
     }
 
     @Test
-    public void joinerOnMap() {
+    public void givenJoinerOnMap_thenOK() {
         String expected = "key1=value1" +
                 "#key2=value2" +
                 "#key3=value3" +

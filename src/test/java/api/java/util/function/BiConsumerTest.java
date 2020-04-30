@@ -1,5 +1,6 @@
 package api.java.util.function;
 
+import model.PersonV1;
 import org.junit.Test;
 
 import java.util.Objects;
@@ -16,47 +17,15 @@ public class BiConsumerTest {
      */
 
     @Test
-    public void biConsumerMuteTwoObjectsPerson() {
-        BiConsumer<Person, Person> biConsumer = (p1, p2) -> {
-            p1.setName("p1");
-            p2.setName("p2");
+    public void givenBiConsumer_whenObjectsPersonMuted_thenObjectsPersonMuted() {
+        BiConsumer<PersonV1, PersonV1> biConsumer = (p1, p2) -> {
+            p1.setFirstName("fn1"); p1.setLastName("ln1"); p1.setAge(25); p1.setSex("m"); p1.setNrn("nrn1");
+            p2.setFirstName("fn2"); p2.setLastName("ln2"); p2.setAge(30); p2.setSex("f"); p2.setNrn("nrn2");
         };
-        Person p1 = new Person(); // no name
-        Person p2 = new Person(); // no name
+        PersonV1 p1 = new PersonV1(); // empty object;
+        PersonV1 p2 = new PersonV1(); // empty object;
         biConsumer.accept(p1, p2); // p1 is mutated and p2 are mutated
-        assertThat(p1).isEqualTo(new Person("p1"));
-        assertThat(p2).isEqualTo(new Person("p2"));
-    }
-
-    class Person {
-        String name;
-
-        public Person() {
-        }
-
-        public Person(String name) {
-            this.name = name;
-        }
-
-        String getName() {
-            return name;
-        }
-
-        void setName(String name) {
-            this.name = name;
-        }
-
-        @Override
-        public boolean equals(Object o) {
-            if (this == o) return true;
-            if (o == null || getClass() != o.getClass()) return false;
-            Person person = (Person) o;
-            return name.equals(person.name);
-        }
-
-        @Override
-        public int hashCode() {
-            return Objects.hash(name);
-        }
+        assertThat(p1).isEqualTo(new PersonV1("fn1", "ln1", 25, "m", "nrn1"));
+        assertThat(p2).isEqualTo(new PersonV1("fn2", "ln2", 30, "f", "nrn2"));
     }
 }

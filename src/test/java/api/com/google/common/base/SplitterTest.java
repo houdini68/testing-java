@@ -11,7 +11,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 
 public class SplitterTest {
     @Test
-    public void When_splitOfString_Expect_NoControl() {
+    public void givenSplitOfString_thenNoControl() {
         String testString = "a,b,,c,d,,";
         String[] items = testString.split(",");
         assertThat(items)
@@ -21,14 +21,14 @@ public class SplitterTest {
     }
 
     @Test
-    public void When_EmptyStrings() {
+    public void givenSplitter_whenEmptyStrings_thenOK() {
         assertThat(Splitter.on('|')
                 .split("a|b||c|"))
                 .containsExactly("a", "b", "", "c", "");
     }
 
     @Test
-    public void When_Regex() {
+    public void givenSplitter_whenRegex_thenOK() {
         Pattern digits = Pattern.compile("\\d+");
         assertThat(Splitter.on(digits)
                 .omitEmptyStrings()
@@ -37,7 +37,7 @@ public class SplitterTest {
     }
 
     @Test
-    public void When_omitEmptyStrings_Expect_EmptyStringsRemoved() {
+    public void givenSplitter_whenOmitEmptyStrings_thenEmptyStringsWasRemoved() {
         assertThat(Splitter.on('|')
                 .omitEmptyStrings()
                 .split("a|b|c|||"))
@@ -45,7 +45,7 @@ public class SplitterTest {
     }
 
     @Test
-    public void When_KeyValues_Expect_Map() {
+    public void givenSplitter_whenKeyValuesSeparator_thenMap() {
         String keyValues = "key1=value1#key2=value2#key3=value3#key4=value4";
         Map<String, String> expectedMap = Maps.newLinkedHashMap();
         expectedMap.put("key1", "value1");

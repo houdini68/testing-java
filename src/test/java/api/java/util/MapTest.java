@@ -10,7 +10,8 @@ import static org.assertj.core.api.Assertions.assertThat;
 public class MapTest {
 
     @Test
-    public void computeSumKeyValue() {
+    public void givenMap_whenComputeSumKeyValue_ThenValuesAssignedSumKeyValue() {
+
         final Map<Integer, Integer> mapActual = new HashMap<Integer, Integer>() {{
             put(1, 1);
             put(2, 2);

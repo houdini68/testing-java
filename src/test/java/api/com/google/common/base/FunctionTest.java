@@ -12,7 +12,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 public class FunctionTest {
 
     @Test
-    public void When_FunctionOnDateAndString_Expect_String() {
+    public void givenFunctionOnDateAndString_thenReturnString() {
 
         // A Guava Function is a Java function.
         Function<Date, String> function = date -> new SimpleDateFormat("dd/MM/yyyy").format(date);

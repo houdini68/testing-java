@@ -24,7 +24,7 @@ public class FunctionsTest {
     }};
 
     @Test
-    public void When_keyIsPresentInMap_Expect_OK() {
+    public void givenKeyIsPresentInMap_thenOK() {
         Function<String, String> lookup = Functions.forMap(map);
         // The map is searched for "key1".
         String value = lookup.apply("key1");
@@ -32,14 +32,14 @@ public class FunctionsTest {
     }
 
     @Test(expected = IllegalArgumentException.class)
-    public void When_keyIsNotPresentInMap_Expect_IllegalArgumentException() {
+    public void givenKeyIsNotPresentInMap_thenIllegalArgumentException() {
         Function<String, String> lookup = Functions.forMap(map);
         String value = lookup.apply(KEY_NOT_EXISTING);
         assertThat(value).isEqualTo("should_not_return_anything");
     }
 
     @Test
-    public void When_keyIsNotPresentInMapAndDefaultValue_Expect_OK() {
+    public void givenKeyIsNotPresentInMapAndDefaultValue_thenOK() {
         Function<String, String> lookup = Functions.forMap(map, VALUE_1_AS_DEFAULT);
         String value = lookup.apply(KEY_NOT_EXISTING);
         assertThat(value).isEqualTo(VALUE_1);

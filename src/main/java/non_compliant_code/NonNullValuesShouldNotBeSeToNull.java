@@ -3,7 +3,7 @@ package non_compliant_code;
 import javax.annotation.Nonnull;
 
 /**
- * A code analysis has to be started.
+ * The Nonnull annotation is used by the code analysis.
  */
 public class NonNullValuesShouldNotBeSeToNull {
 

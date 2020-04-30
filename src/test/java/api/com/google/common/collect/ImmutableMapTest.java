@@ -9,7 +9,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 public class ImmutableMapTest {
 
     @Test
-    public void builder() {
+    public void givenBuilderOnImmutable_thenImmutableMapIsReturned() {
         ImmutableMap<Character, Integer> immutableMap
                 = ImmutableMap.<Character, Integer>builder()
                 .put('a', 1)

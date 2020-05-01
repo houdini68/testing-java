@@ -45,6 +45,12 @@ Rudy Vissers(Belgium). English is not my mother tongue.
 ##### [FluentIterableTest](src/test/java/api/com/google/common/collect/FluentIterableTest.java)
 ##### [ImmutableMapTest](src/test/java/api/com/google/common/collect/ImmutableMapTest.java)
 
+# Mockito
+
+## org.mockito
+
+##### [InjectMocksTest](src/test/java/api/org/mockito/InjectMocksTest.java)
+
 # Non compliant code
 
 ## non_compliant_code
@@ -56,3 +62,4 @@ Rudy Vissers(Belgium). English is not my mother tongue.
 ## model
 
 ##### [PersonV1](src/main/java/model/PersonV1.java)
+

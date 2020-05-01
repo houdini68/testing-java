@@ -6,7 +6,7 @@ public class Service {
     private final Service2 service2;
 
     // the annotation InjectMocks makes usage of the constructor
-    Service(Service1 service1, Service2 service2) {
+    public Service(Service1 service1, Service2 service2) {
         this.service1 = service1;
         this.service2 = service2;
     }

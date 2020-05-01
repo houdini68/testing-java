@@ -13,7 +13,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 import static org.mockito.Mockito.*;
 
 /**
- * Mockito uses the Service constructor Service(DatabaseDAO database, NetworkDAO network) to inject/pass the dependencies.
+ * Mockito uses the Service constructor Service(Service1 service1, Service2 service2) to inject/pass the dependencies.
  * The purpose of the test is not to test/check Service1 and Service2!
  * It is why both Service1 and Service2 are mocked.
  * The purpose of the test is to test/check the behaviour of Service.

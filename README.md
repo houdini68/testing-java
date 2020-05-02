@@ -51,6 +51,13 @@ Rudy Vissers(Belgium). English is not my mother tongue.
 ##### [Service1](src/main/java/api/org/mockito/injectsmocks/Service1.java)
 ##### [Service2](src/main/java/api/org/mockito/injectsmocks/Service2.java)
 
+# AssertJ
+
+## org.assertj.core.api
+
+##### [AssertionsTest](src/test/java/api/org/assertj/core/api/AssertionsTest.java)
+###### assertThat
+
 # Non compliant code
 
 ## non_compliant_code

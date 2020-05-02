@@ -10,9 +10,6 @@ I have decided to document the classes that a modern developer has a great chanc
 
 Each time I visit a site (Stackoverflow) to get some help on programming or I made some investigations on a specific topic I will try to make a test that will be documented here.
 
-Not yet documented:
-Java 13, Spring framework (Spring Boot), JPA (Hibernate), Mockito, AssertJ,...
-
 It is an Apache Maven project and it was written using Intellij Idea.
 
 Rudy Vissers(Belgium). English is not my mother tongue.
@@ -50,6 +47,9 @@ Rudy Vissers(Belgium). English is not my mother tongue.
 ## org.mockito
 
 ##### [InjectMocksTest](src/test/java/api/org/mockito/InjectMocksTest.java)
+##### [Service](src/main/java/api/org/mockito/injectsmocks/Service.java)
+##### [Service1](src/main/java/api/org/mockito/injectsmocks/Service1.java)
+##### [Service2](src/main/java/api/org/mockito/injectsmocks/Service2.java)
 
 # Non compliant code
 

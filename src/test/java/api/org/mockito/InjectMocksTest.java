@@ -20,12 +20,17 @@ import static org.mockito.Mockito.*;
  */
 public class InjectMocksTest {
 
+    // When service1.operation is called, it is recorded but nothing happens because it was mocked.
     @Mock
     Service1 service1;
 
     @Mock
     Service2 service2;
 
+    // As you want to unit test Service, you pass by constructor injection the dependencies.
+    // In this case Service1 and Service2.
+    // This is not Spring dependency injection!
+    // It is a way to make your life easy as the dependencies are aut passed to the constructor of Service.
     @InjectMocks
     Service service;
 

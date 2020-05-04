@@ -18,6 +18,10 @@ Rudy Vissers(Belgium). English is not my mother tongue.
 
 # Java
 
+## java.nio.file
+
+##### [FilesTest](src/test/java/api/java/nio/file/FilesTest.java) 
+
 ## java.util
 
 ##### [MapTest](src/test/java/api/java/util/MapTest.java)

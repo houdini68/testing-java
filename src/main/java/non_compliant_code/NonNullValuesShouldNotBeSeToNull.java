@@ -19,7 +19,7 @@ public class NonNullValuesShouldNotBeSeToNull {
     }
 
     public NonNullValuesShouldNotBeSeToNull() {
-        // Noncompliant; "primary" Nonnull" but is not initialized
+        // Noncompliant; "primary" Nonnull" but is not initialized in this constructor
     }
 
     @Nonnull

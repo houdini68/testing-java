@@ -28,7 +28,7 @@ public class JoinerTest {
     }
 
     @Test(expected = UnsupportedOperationException.class)
-    public void givenJoinerImmutable_whenMethodUseForNullAfterCreation_thenNoEffect() {
+    public void givenJoinerImmutable_whenMethodUseForNullAfterCreation_thenException() {
         Joiner joiner = Joiner.on("|").skipNulls();
         joiner.useForNull("not_used_because_joiner_is_immutable");
         assertThat(joiner
@@ -57,8 +57,7 @@ public class JoinerTest {
         map.put("key2", "value2");
         map.put("key3", "value3");
         map.put("key4", "value4");
-        String actual
-                = Joiner.on("#")
+        String actual = Joiner.on("#")
                 .withKeyValueSeparator("=")
                 .join(map);
         assertThat(actual)

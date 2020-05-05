@@ -13,9 +13,8 @@ public class FunctionsTest {
 
     private static final String KEY_1 = "key1";
     private static final String VALUE_1 = "value1";
-    private static final String VALUE_1_AS_DEFAULT = VALUE_1;
     private static final String KEY_NOT_EXISTING = "key_not_existing";
-    private static final String DEFAULT_VALUE = "value1";
+    private static final String DEFAULT_VALUE = "default_value";
 
     final Map<String, String> map = new HashMap<String, String>() {{
         put("key1", "value1");
@@ -27,7 +26,7 @@ public class FunctionsTest {
     public void givenKeyIsPresentInMap_thenOK() {
         Function<String, String> lookup = Functions.forMap(map);
         // The map is searched for "key1".
-        String value = lookup.apply("key1");
+        String value = lookup.apply(KEY_1);
         assertThat(value).isEqualTo(VALUE_1);
     }
 
@@ -35,13 +34,13 @@ public class FunctionsTest {
     public void givenKeyIsNotPresentInMap_thenIllegalArgumentException() {
         Function<String, String> lookup = Functions.forMap(map);
         String value = lookup.apply(KEY_NOT_EXISTING);
-        assertThat(value).isEqualTo("should_not_return_anything");
+        assertThat(value).isEqualTo("IllegalArgumentException is thrown!");
     }
 
     @Test
     public void givenKeyIsNotPresentInMapAndDefaultValue_thenOK() {
-        Function<String, String> lookup = Functions.forMap(map, VALUE_1_AS_DEFAULT);
+        Function<String, String> lookup = Functions.forMap(map, DEFAULT_VALUE);
         String value = lookup.apply(KEY_NOT_EXISTING);
-        assertThat(value).isEqualTo(VALUE_1);
+        assertThat(value).isEqualTo(DEFAULT_VALUE);
     }
 }

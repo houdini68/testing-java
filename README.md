@@ -61,6 +61,8 @@ Rudy Vissers(Belgium). English is not my mother tongue.
 
 ##### [AssertionsTest](src/test/java/api/org/assertj/core/api/AssertionsTest.java)
 ###### assertThat
+###### assertThatThrownByTest
+###### catchTrowableTest
 
 # Non compliant code
 

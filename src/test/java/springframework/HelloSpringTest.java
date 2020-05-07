@@ -12,11 +12,11 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 @ContextConfiguration(classes = Config.class)
 public class HelloSpringTest {
     @Autowired
-    Hello helloWorld;
+    Hello hello;
 
     @Test
     public void givenHelloWorld_returnStringHello() {
-        Assertions.assertThat(helloWorld.sayHello()).isEqualTo("Hello world!");
+        Assertions.assertThat(hello.sayHello()).isEqualTo("Hello world!");
     }
 }
 

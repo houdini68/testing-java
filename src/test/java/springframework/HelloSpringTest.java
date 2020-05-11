@@ -15,7 +15,7 @@ public class HelloSpringTest {
     Hello helloWorld;
 
     @Test
-    public void givenHelloWorld_returnStringHello() {
+    public void givenHelloWorld_whenCallingSayHello_returnStringHello() {
         Assertions.assertThat(helloWorld.sayHello()).isEqualTo("Hello world!");
     }
 }

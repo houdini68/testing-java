@@ -8,11 +8,11 @@ Javadoc is sometimes complicated. Not easy to read. You want an example.
 
 I have decided to document the classes that a modern developer has a great chance to meet at customer site.
 
-Each time I visit a site (Stackoverflow) to get some help on programming or I made some investigations on a specific topic I will try to make a test that will be documented here.
+Each time I visit a site (Stackoverflow) to get some help on programming or I made some investigations on a specific topic I will try to make a test/or write some code that will be documented here.
 
 It is an Apache Maven project and it was written using Intellij Idea.
 
-Rudy Vissers(Belgium). English is not my mother tongue.
+Rudy Vissers(Belgium/Walloon Brabant).
 
 # What is tested?
 
@@ -64,20 +64,20 @@ Rudy Vissers(Belgium). English is not my mother tongue.
 ###### assertThatThrownByTest
 ###### catchTrowableTest
 
-# Non compliant code
+# Non compliant code detected by the IDE
 
 ## non_compliant_code
 
 ##### [NonNullValuesShouldNotBeSeToNull](src/main/java/non_compliant_code/NonNullValuesShouldNotBeSeToNull.java)
-
-# Model
-
-## model
-
-##### [PersonV1](src/main/java/model/PersonV1.java)
 
 # Springframework
 
 ## core
 
 ##### [HelloSpringTest](src/test/java/springframework/HelloSpringTest.java)
+
+# Model
+
+## model
+
+##### [PersonV1](src/main/java/model/PersonV1.java)

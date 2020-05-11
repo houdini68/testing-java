@@ -15,14 +15,14 @@ public class HelloSpringTest {
     Hello hello;
 
     @Test
-    public void givenHelloWorld_returnStringHello() {
-        Assertions.assertThat(hello.sayHello()).isEqualTo("Hello world!");
+    public void givenHello_whenCallingSayHello_returnStringHello() {
+        Assertions.assertThat(hello.sayHello()).isEqualTo("Hello!");
     }
 }
 
 class Hello {
     String sayHello() {
-        return "Hello world!";
+        return "Hello!";
     }
 }
 

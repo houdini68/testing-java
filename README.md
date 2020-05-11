@@ -18,6 +18,10 @@ Rudy Vissers(Belgium). English is not my mother tongue.
 
 # Java
 
+## java.lang
+
+##### [demo shutdown hook](src/main/java/api/java/lang/ShutdownHookDemo.java) 
+
 ## java.nio.file
 
 ##### [FilesTest](src/test/java/api/java/nio/file/FilesTest.java) 
@@ -50,10 +54,14 @@ Rudy Vissers(Belgium). English is not my mother tongue.
 
 ## org.mockito
 
+##### [MockTest](src/test/java/api/org/mockito/MockTest.java)
+##### [SpyTest](src/test/java/api/org/mockito/SpyTest.java)
+##### [CaptorTest](src/test/java/api/org/mockito/CaptorTest.java)
 ##### [InjectMocksTest](src/test/java/api/org/mockito/InjectMocksTest.java)
 ##### [Service](src/main/java/api/org/mockito/injectsmocks/Service.java)
 ##### [Service1](src/main/java/api/org/mockito/injectsmocks/Service1.java)
 ##### [Service2](src/main/java/api/org/mockito/injectsmocks/Service2.java)
+
 
 # AssertJ
 

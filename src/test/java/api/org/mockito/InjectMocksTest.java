@@ -7,10 +7,10 @@ import org.junit.Before;
 import org.junit.Test;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
-import org.mockito.MockitoAnnotations;
 
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.mockito.Mockito.*;
+import static org.mockito.MockitoAnnotations.initMocks;
 
 /**
  * Mockito uses the Service constructor Service(Service1 service1, Service2 service2) to inject/pass the dependencies.
@@ -36,7 +36,7 @@ public class InjectMocksTest {
 
     @Before
     public void init() {
-        MockitoAnnotations.initMocks(this);
+        initMocks(this);
     }
 
     @Test

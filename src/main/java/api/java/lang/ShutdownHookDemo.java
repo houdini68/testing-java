@@ -2,7 +2,7 @@ package api.java.lang;
 
 public class ShutdownHookDemo {
 
-    // a class that extends thread that is to be called when program is exiting
+    // a class that extends thread is to be called when the program does exit
     static class ShutDownHook extends Thread {
         public void run() {
             System.out.println("This thread part of the class ShutDownHook is executed after the main thread exited...");

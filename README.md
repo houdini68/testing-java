@@ -43,6 +43,7 @@ Rudy Vissers(Belgium). English is not my mother tongue.
 ##### [FunctionsTest](src/test/java/api/com/google/common/base/FunctionsTest.java)
 ##### [FunctionTest](src/test/java/api/com/google/common/base/FunctionTest.java) 
 ##### [JoinerTest](src/test/java/api/com/google/common/base/JoinerTest.java)
+##### [MoreObjectsTest](src/test/java/api/com/google/common/base/MoreObjectsTest.java) [not yet tested]
 ##### [SplitterTest](src/test/java/api/com/google/common/base/SplitterTest.java)
 
 ## com.google.common.collect
@@ -58,6 +59,7 @@ Rudy Vissers(Belgium). English is not my mother tongue.
 ##### [SpyTest](src/test/java/api/org/mockito/SpyTest.java)
 ##### [CaptorTest](src/test/java/api/org/mockito/CaptorTest.java)
 ##### [InjectMocksTest](src/test/java/api/org/mockito/InjectMocksTest.java)
+##### [VerifyTest](src/test/java/api/org/mockito/VerifyTest.java)
 ##### [Service](src/main/java/api/org/mockito/injectsmocks/Service.java)
 ##### [Service1](src/main/java/api/org/mockito/injectsmocks/Service1.java)
 ##### [Service2](src/main/java/api/org/mockito/injectsmocks/Service2.java)

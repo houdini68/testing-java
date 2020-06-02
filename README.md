@@ -12,29 +12,60 @@ Each time I visit a site (Stackoverflow) to get some help on programming or I ma
 
 It is an Apache Maven project and it was written using Intellij Idea.
 
-Rudy Vissers(Belgium). English is not my mother tongue.
+Rudy Vissers(Belgium).
 
-# What is tested?
+# Software Engineering
+
+## Behavior Parameterization
+
+#### [FilterApple](src/main/java/se/behaviorparameterization/FilterApple.java)
+#### [Apple](src/main/java/se/behaviorparameterization/Apple.java)
+#### [Color](src/main/java/se/behaviorparameterization/Color.java)
+#### [BehaviorParameterizationTest](src/test/java/se/behaviorparameterization/BehaviorParameterizationTest.java)
+
+# Springframework
+## core
+##### [HelloSpringTest](src/test/java/springframework/HelloSpringTest.java)
+###### Wiring of a bean. Java configuration.
+
+# Util
+#### [Util](src/main/java/util/Util.java)
+###### String mapToBoolean(String value, String defaultValue)
+#### [UtilTest](src/test/java/util/UtilTest.java)
 
 # Java
+
+## Core language
+
+##### [SwitchTest](src/test/java/corelanguage/SwitchTest.java)
 
 ## java.lang
 
 ##### [demo shutdown hook](src/main/java/api/java/lang/ShutdownHookDemo.java) 
+##### [WrapperTest](src/test/java/api/java/lang/WrapperTest.java) 
 
 ## java.nio.file
 
 ##### [FilesTest](src/test/java/api/java/nio/file/FilesTest.java) 
 
+## java.util.function
+
+##### [BiConsumerTest](src/test/java/api/java/util/function/BiConsumerTest.java)
+##### [BiFunctionTest](src/test/java/api/java/util/function/BiFunctionTest.java)
+
+## java.util.stream
+
+##### [FlatMapTest](src/test/java/api/java/util/stream/FlatMapTest.java) 
+
 ## java.util
 
 ##### [MapTest](src/test/java/api/java/util/MapTest.java)
 
-## java.util.function
+# Joda
 
-##### [BiConsumerTest](src/test/java/api/java/util/function/BiConsumerTest.java)
+## org.joda.time.format
 
-##### [BiFunctionTest](src/test/java/api/java/util/function/BiFunctionTest.java)
+#### [PeriodFormatterBuilderTest](src/test/java/api/org/joda/time/format/PeriodFormatterBuilderTest.java)
 
 # Guava
 
@@ -51,6 +82,8 @@ Rudy Vissers(Belgium). English is not my mother tongue.
 ##### [FluentIterableTest](src/test/java/api/com/google/common/collect/FluentIterableTest.java)
 ##### [ImmutableMapTest](src/test/java/api/com/google/common/collect/ImmutableMapTest.java)
 
+# Testing
+
 # Mockito
 
 ## org.mockito
@@ -64,7 +97,6 @@ Rudy Vissers(Belgium). English is not my mother tongue.
 ##### [Service1](src/main/java/api/org/mockito/injectsmocks/Service1.java)
 ##### [Service2](src/main/java/api/org/mockito/injectsmocks/Service2.java)
 
-
 # AssertJ
 
 ## org.assertj.core.api
@@ -73,19 +105,16 @@ Rudy Vissers(Belgium). English is not my mother tongue.
 ###### assertThat
 ###### assertThatThrownByTest
 ###### catchTrowableTest
+##### [Race](src/test/java/api/org/assertj/core/api/AssertionsTest.java)
+##### [TolkienCharacter](src/test/java/api/org/assertj/core/api/AssertionsTest.java)
+
+# Code analysis
 
 # Non compliant code analyzed by the IDE
 
 ## Nonnull annotation
 
 ##### [NonNullValuesShouldNotBeSeToNull](src/main/java/non_compliant_code/NonNullValuesShouldNotBeSeToNull.java)
-
-# Springframework
-
-## core
-
-##### [HelloSpringTest](src/test/java/springframework/HelloSpringTest.java)
-###### Wiring of a bean. Java configuration.
 
 # Model
 

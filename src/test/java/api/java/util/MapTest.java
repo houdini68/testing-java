@@ -25,9 +25,30 @@ public class MapTest {
         // key is remapped into key + value
         mapActual.forEach((key, value) -> mapActual.compute(key, (key1, value1) -> key1 + value1));
 
-        assertThat(mapActual)
-                .isNotNull()
-                .hasSize(3)
-                .isEqualTo(mapExpected);
+        assertThat(mapActual).isNotNull().hasSize(3).isEqualTo(mapExpected);
+    }
+
+    @Test
+    public void mapBooleanTest() {
+
+        final Map<String, String> mapBoolean = new HashMap<String, String>() {{
+            put("1", "true");
+            put("0", "false");
+            put("false", "false");
+            put("true", "true");
+        }};
+
+        String booleanValue = "0";
+        assertThat(mapBoolean.get(booleanValue.toLowerCase())).isEqualTo("false");
+        booleanValue = "1";
+        assertThat(mapBoolean.get(booleanValue.toLowerCase())).isEqualTo("true");
+        booleanValue = "false";
+        assertThat(mapBoolean.get(booleanValue.toLowerCase())).isEqualTo("false");
+        booleanValue = "true";
+        assertThat(mapBoolean.get(booleanValue.toLowerCase())).isEqualTo("true");
+        booleanValue = "FALSE";
+        assertThat(mapBoolean.get(booleanValue.toLowerCase())).isEqualTo("false");
+        booleanValue = "TRUE";
+        assertThat(mapBoolean.get(booleanValue.toLowerCase())).isEqualTo("true");
     }
 }

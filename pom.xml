@@ -9,7 +9,7 @@
     <version>1.0-SNAPSHOT</version>
 
     <name>testing-java</name>
-    <url>http://www.example.com</url>
+    <url>https://github.com/houdini68/testing-java</url>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>

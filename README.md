@@ -76,7 +76,7 @@ Rudy Vissers(Belgium).
 ##### [FunctionsTest](src/test/java/api/com/google/common/base/FunctionsTest.java)
 ##### [FunctionTest](src/test/java/api/com/google/common/base/FunctionTest.java) 
 ##### [JoinerTest](src/test/java/api/com/google/common/base/JoinerTest.java)
-##### [MoreObjectsTest](src/test/java/api/com/google/common/base/MoreObjectsTest.java) [not yet tested]
+##### [MoreObjectsTest](src/test/java/api/com/google/common/base/MoreObjectsTest.java)
 ##### [SplitterTest](src/test/java/api/com/google/common/base/SplitterTest.java)
 
 ## com.google.common.collect

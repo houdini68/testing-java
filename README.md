@@ -125,3 +125,16 @@ Rudy Vissers(Belgium).
 
 ##### [PersonV1](src/main/java/model/PersonV1.java)
 
+# Clean coding
+
+### New object creation
+
+#### Annotations
+
+###### Nonnull
+###### ParametersAreNonnullByDefault
+###### ParametersAreNullableByDefault
+
+#### toString
+
+

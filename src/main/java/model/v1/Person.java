@@ -1,15 +1,15 @@
-package model;
+package model.v1;
 
 import java.util.Objects;
 
-public class PersonV1 {
+public class Person {
     private String firstName;
     private String lastName;
     private int age;
     private String sex;
     private String nrn;
 
-    public PersonV1(String firstName, String lastName, int age, String sex, String nrn) {
+    public Person(String firstName, String lastName, int age, String sex, String nrn) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.age = age;
@@ -17,7 +17,7 @@ public class PersonV1 {
         this.nrn = nrn;
     }
 
-    public PersonV1() {
+    public Person() {
 
     }
 
@@ -69,8 +69,8 @@ public class PersonV1 {
         if (o == null || getClass() != o.getClass()) {
             return false;
         }
-        PersonV1 personV1 = (PersonV1) o;
-        return nrn.equals(personV1.nrn);
+        Person person = (Person) o;
+        return nrn.equals(person.nrn);
     }
 
     @Override

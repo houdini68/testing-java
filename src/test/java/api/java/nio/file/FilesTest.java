@@ -18,7 +18,7 @@ public class FilesTest {
             // /tmp/1063942235502049642.myapp
             assertThat(tempFile).exists();
         } catch (IOException e) {
-            fail("It was not pssible to create the temp file!");
+            fail("It was not possible to create the temp file!");
         }
     }
 }

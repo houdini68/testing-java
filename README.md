@@ -1,77 +1,55 @@
 # Testing the Java ecosystem
 
-Testing the apis needed by a modern Java developer.
+Testing the APIs needed by a modern Java developer.
 
 How many times are you stuck at customer site because you don't remember the usage of a class or a method from a well known api?
 
 Javadoc is sometimes complicated. Not easy to read. You want an example.
 
-I have decided to document the classes that a modern developer has a great chance to meet at customer site.
+I have decided to document the classes/APIs that a modern developer has a great chance to meet at customer site.
 
-Each time I visit a site (Stackoverflow) to get some help on programming or I made some investigations on a specific topic I will try to make a test that will be documented here.
+Each time I visit a site (Stackoverflow) to get some help on programming or I made some investigations on a specific topic I will try to create a test that will be documented here.
 
 It is an Apache Maven project and it was developed using Intellij Idea.
 
 Rudy Vissers(Belgium).
 
-# Tested on JDK 8 - 
- 
-# Software Engineering
+# Tested on JDK 8 - 81 tests
 
-## Behavior Parameterization
+##### [Test Results](TestResults-All_in_testing-java.html)
 
-#### [FilterApple](src/main/java/se/behaviorparameterization/FilterApple.java)
-#### [Apple](src/main/java/se/behaviorparameterization/Apple.java)
-#### [Color](src/main/java/se/behaviorparameterization/Color.java)
-#### [BehaviorParameterizationTest](src/test/java/se/behaviorparameterization/BehaviorParameterizationTest.java)
+# Java lang
 
-# Springframework
-## core
-##### [HelloSpringTest](src/test/java/springframework/HelloSpringTest.java)
-###### Wiring of a bean. Java configuration.
+##### [ShutdownHookDemo](src/main/java/api/java/lang/ShutdownHookDemo.java)
 
-# Util
-#### [Util](src/main/java/util/Util.java)
-###### String mapToBoolean(String value, String defaultValue)
-#### [UtilTest](src/test/java/util/UtilTest.java)
+# Design Patterns
 
-# Java
+##### [ClassSingleton](src/main/java/dp/singleton/ClassSingleton.java)
+##### [EnumSingleton](src/main/java/dp/singleton/EnumSingleton.java)
 
-## Core language
+# Non compliant code
 
-##### [SwitchTest](src/test/java/corelanguage/SwitchTest.java)
+##### [NonNullValuesShouldNotBeSeToNull](src/main/java/non_compliant_code/NonNullValuesShouldNotBeSeToNull.java)
+###### Nonnull
+###### ParametersAreNonnullByDefault
+###### ParametersAreNullableByDefault
 
-## java.lang
+# Java 8
 
-##### [demo shutdown hook](src/main/java/api/java/lang/ShutdownHookDemo.java) 
-##### [WrapperTest](src/test/java/api/java/lang/WrapperTest.java) 
+##### [FilterApple](src/main/java/se/behaviorparameterization/FilterApple.java)
 
-## java.nio.file
+# Java Util 
 
-##### [FilesTest](src/test/java/api/java/nio/file/FilesTest.java) 
+##### [Util](src/main/java/util/Util.java)
+###### mapToBoolean
 
-## java.util.function
+# Jackson
 
-##### [BiConsumerTest](src/test/java/api/java/util/function/BiConsumerTest.java)
-##### [BiFunctionTest](src/test/java/api/java/util/function/BiFunctionTest.java)
+#### Constructor injection
 
-## java.util.stream
-
-##### [FlatMapTest](src/test/java/api/java/util/stream/FlatMapTest.java) 
-
-## java.util
-
-##### [MapTest](src/test/java/api/java/util/MapTest.java)
-
-# Joda
-
-## org.joda.time.format
-
-#### [PeriodFormatterBuilderTest](src/test/java/api/org/joda/time/format/PeriodFormatterBuilderTest.java)
+##### [ConstructorInjectionTest](src/test/java/api/com/fasterxml/jackson/ConstructorInjectionTest.java)
 
 # Guava
-
-## com.google.common.base
 
 ##### [FunctionsTest](src/test/java/api/com/google/common/base/FunctionsTest.java)
 ##### [FunctionTest](src/test/java/api/com/google/common/base/FunctionTest.java) 
@@ -79,62 +57,73 @@ Rudy Vissers(Belgium).
 ##### [MoreObjectsTest](src/test/java/api/com/google/common/base/MoreObjectsTest.java)
 ##### [SplitterTest](src/test/java/api/com/google/common/base/SplitterTest.java)
 
-## com.google.common.collect
-
 ##### [FluentIterableTest](src/test/java/api/com/google/common/collect/FluentIterableTest.java)
 ##### [ImmutableMapTest](src/test/java/api/com/google/common/collect/ImmutableMapTest.java)
 
-# Testing
+# Java lang
 
-# Mockito
+##### [BoxingUnboxingTest](src/test/java/api/java/lang/BoxingUnboxingTest.java)
+##### [IntegerTest](src/test/java/api/java/lang/IntegerTest.java)
 
-## org.mockito
+# Java nio
 
-##### [MockTest](src/test/java/api/org/mockito/MockTest.java)
-##### [ArgumentMatchersTest](src/test/java/api/org/mockito/ArgumentMatchersTest.java)
-##### [SpyTest](src/test/java/api/org/mockito/SpyTest.java)
-##### [CaptorTest](src/test/java/api/org/mockito/CaptorTest.java)
-##### [InjectMocksTest](src/test/java/api/org/mockito/InjectMocksTest.java)
-##### [VerifyTest](src/test/java/api/org/mockito/VerifyTest.java)
-##### [Service](src/main/java/api/org/mockito/injectsmocks/Service.java)
-##### [Service1](src/main/java/api/org/mockito/injectsmocks/Service1.java)
-##### [Service2](src/main/java/api/org/mockito/injectsmocks/Service2.java)
+##### [FilesTest](src/test/java/api/java/nio/file/FilesTest.java) 
+
+# Java 8
+
+##### [BiConsumerTest](src/test/java/api/java/util/function/BiConsumerTest.java)
+##### [BiFunctionTest](src/test/java/api/java/util/function/BiFunctionTest.java)
+
+##### [FlatMapTest](src/test/java/api/java/util/stream/FlatMapTest.java) 
+
+##### [MapTest](src/test/java/api/java/util/MapTest.java)
+
+# Apache lang3
+
+##### [StringUtilsTest](src/test/java/api/org/apache/commons/lang3/StringUtilsTest.java)
 
 # AssertJ
 
-## org.assertj.core.api
-
 ##### [AssertionsTest](src/test/java/api/org/assertj/core/api/AssertionsTest.java)
-###### assertThat
-###### assertThatThrownByTest
-###### catchTrowableTest
-##### [Race](src/test/java/api/org/assertj/core/api/AssertionsTest.java)
-##### [TolkienCharacter](src/test/java/api/org/assertj/core/api/AssertionsTest.java)
 
-# Code analysis
+# Joda
 
-# Non compliant code analyzed by the IDE
+##### [PeriodFormatterBuilderTest](src/test/java/api/org/joda/time/format/PeriodFormatterBuilderTest.java)
 
-## Nonnull annotation
+# Mockito
 
-##### [NonNullValuesShouldNotBeSeToNull](src/main/java/non_compliant_code/NonNullValuesShouldNotBeSeToNull.java)
+##### [ArgumentMatchersTest](src/test/java/api/org/mockito/ArgumentMatchersTest.java)
+##### [CaptorTest](src/test/java/api/org/mockito/CaptorTest.java)
+##### [InjectMocksTest](src/test/java/api/org/mockito/InjectMocksTest.java)
+##### [MockTest](src/test/java/api/org/mockito/MockTest.java)
+##### [SpyTest](src/test/java/api/org/mockito/SpyTest.java)
+##### [VerifyTest](src/test/java/api/org/mockito/VerifyTest.java)
 
-# Model
+# Java core
 
-## model
+##### [Comparisons](src/test/java/core/Comparisons.java)
 
-##### [PersonV1](src/main/java/model/PersonV1.java)
+##### [EnumTest](src/test/java/api/java/core/EnumTest.java)
 
-# Clean coding
+##### [SwitchTest](src/test/java/api/java/core/SwitchTest.java)
 
-### New object creation
+# Design patterns
 
-#### Annotations
+##### [ClassSingletonTest](src/test/java/dp/singleton/ClassSingletonTest.java)
+##### [EnumSingletonTest](src/test/java/dp/singleton/EnumSingletonTest.java)
 
-###### Nonnull
-###### ParametersAreNonnullByDefault
-###### ParametersAreNullableByDefault
+# Java 8
 
-#### toString
+##### [BehaviorParameterizationTest](src/test/java/se/behaviorparameterization/BehaviorParameterizationTest.java)
+##### [FilterApple](src/main/java/se/behaviorparameterization/FilterApple.java)
 
+# Spring (to move somewhere else)
+
+#### Wiring of a bean. Java configuration.
+##### [HelloSpringTest](src/test/java/springframework/HelloSpringTest.java)
+
+# Java util
+ 
+##### [UtilTest](src/test/java/util/UtilTest.java)
+######mapToBoolean
 

@@ -11,6 +11,7 @@ import static org.junit.Assert.assertEquals;
 
 public class FlatMapTest {
 
+    // difference between a .map and a .flatMap
     @Test
     public void convertStringToUpperCaseStreams() {
         List<String> collected = Stream.of("a", "b", "hello") // Stream of String

@@ -2,7 +2,7 @@ package api.java.lang;
 
 import org.junit.Test;
 
-public class WrapperTest {
+public class BoxingUnboxingTest {
 
     @Test (expected = NullPointerException.class)
     public void givenIntegerObjectAssignedNull_whenUnboxingToPrimitive_ThenNullPointerException() {

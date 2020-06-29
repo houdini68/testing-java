@@ -27,6 +27,7 @@ public class ArgumentMatchersTest {
         //        doReturn(RETURNED_A_VALUE).when(service).doSomething(ACTION);
         when(service.doSomething(ACTION)).thenReturn(RETURNED_A_VALUE);
         assertThat(service.doSomething(ACTION)).isEqualTo(RETURNED_A_VALUE);
+        verify(service).doSomething(ACTION);
         verifyNoMoreInteractions(service);
     }
 
@@ -34,6 +35,7 @@ public class ArgumentMatchersTest {
     public void givenMock_whenMethodParameterAnyString_thenReturnedValue() {
         when(service.doSomething(anyString())).thenReturn(RETURNED_A_VALUE);
         assertThat(service.doSomething(ACTION)).isEqualTo(RETURNED_A_VALUE);
+        verify(service).doSomething(ACTION);
         verifyNoMoreInteractions(service);
     }
 
@@ -42,6 +44,7 @@ public class ArgumentMatchersTest {
         when(service.doSomething(ACTION, anyInt())).thenReturn(RETURNED_A_VALUE);
         // both must be matchers!
         assertThat(service.doSomething(ACTION, 1)).isEqualTo(RETURNED_A_VALUE);
+        verify(service).doSomething(ACTION, 1);
         verifyNoMoreInteractions(service);
     }
 
@@ -50,6 +53,7 @@ public class ArgumentMatchersTest {
         // corr of the previous unit test givenMock_whenFirstParamFixedAndSecondAnyInt_thenInvalidUseOfMatchers
         when(service.doSomething(eq(ACTION), anyInt())).thenReturn(RETURNED_A_VALUE);
         assertThat(service.doSomething(ACTION, 1)).isEqualTo(RETURNED_A_VALUE);
+        verify(service).doSomething(ACTION, 1);
         verifyNoMoreInteractions(service);
     }
 

@@ -9,6 +9,7 @@ import java.util.Map;
 import static org.assertj.core.api.Assertions.assertThat;
 
 public class JoinerTest {
+
     @Test
     public void givenJoinerOnStrings_thenOK() {
 

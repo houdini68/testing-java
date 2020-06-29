@@ -7,6 +7,7 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.Objects;
 
+import static api.org.assertj.core.api.Race.*;
 import static org.assertj.core.api.Assertions.*;
 
 public class AssertionsTest {
@@ -21,12 +22,12 @@ public class AssertionsTest {
 
     @Before
     public void setUp() throws Exception {
-        frodo = new TolkienCharacter("Frodo", 32, new Race("Hobbit"));
-        sauron = new TolkienCharacter("Sauron", 33, new Race("Elf"));
-        sam = new TolkienCharacter("Sam", 38, new Race("Hobbit"));
-        boromir = new TolkienCharacter("Boromir", 37, new Race("Man"));
-        legolas = new TolkienCharacter("Legolas", 1000, new Race("Elf"));
-        aragorn = new TolkienCharacter("Aragorn", 1000, new Race("Elf"));
+        frodo = new TolkienCharacter("Frodo", 32, Hobbit);
+        sauron = new TolkienCharacter("Sauron", 33, Elf);
+        sam = new TolkienCharacter("Sam", 38, Hobbit);
+        boromir = new TolkienCharacter("Boromir", 37, Man);
+        legolas = new TolkienCharacter("Legolas", 1000, Elf);
+        aragorn = new TolkienCharacter("Aragorn", 1000, Elf);
         fellowshipOfTheRing = Arrays.asList(frodo, sam, boromir, legolas, aragorn);
     }
 
@@ -43,15 +44,15 @@ public class AssertionsTest {
 
         assertThat(fellowshipOfTheRing).hasSize(5)
                 .contains(frodo, sam)
-                .doesNotContain(sauron);
+                .doesNotContain(sauron); // sauron 
 
         assertThat(frodo.getAge())
-                .as("check %s's age", frodo.getName())
+                .as("check %s's age", frodo.getName()) // custom assert failure message
                 .isEqualTo(32);
 
         assertThat(fellowshipOfTheRing)
                 .extracting(TolkienCharacter::getName)
-                .doesNotContain("Sauron", "Elrond");
+                .doesNotContain("Sauron", "Elrond"); //
 
         assertThat(fellowshipOfTheRing)
                 .extracting("name", "age", "race.name")
@@ -70,44 +71,29 @@ public class AssertionsTest {
         assertThat(fellowshipOfTheRing)
                 .filteredOn(character -> character.getName().contains("o"))
                 .containsOnly(aragorn, frodo, legolas, boromir)
-                .extracting(character -> character.getRace().getName())
-                .contains("Hobbit", "Elf", "Man");
+                .extracting(character -> character.getRace())
+                .contains(Hobbit, Elf, Man);
     }
 
     @Test
     public void assertThatThrownByTest() {
-        assertThatThrownBy(() -> { throw new Exception("boom!"); })
+        assertThatThrownBy(() -> {
+            throw new Exception("boom!");
+        })
                 .hasMessage("boom!");
     }
 
     @Test
     public void catchTrowableTest() {
-        Throwable thrown = catchThrowable(() -> { throw new Exception("boom!"); });
+        Throwable thrown = catchThrowable(() -> {
+            throw new Exception("boom!");
+        });
         assertThat(thrown).hasMessageContaining("boom");
     }
 }
 
-// FIXME: 6/05/20 make usage of Enum
-class Race {
-
-    String name;
-
-    Race(String name) {
-        this.name = name;
-    }
-
-    String getName() {
-        return name;
-    }
-
-    void setName(String name) {
-        this.name = name;
-    }
-
-    @Override
-    public String toString() {
-        return "Race{" + "name='" + name + '\'' + '}';
-    }
+enum Race {
+    Hobbit, Elf, Man
 }
 
 class TolkienCharacter {

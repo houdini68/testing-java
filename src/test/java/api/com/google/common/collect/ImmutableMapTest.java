@@ -11,7 +11,7 @@ public class ImmutableMapTest {
     @Test
     public void givenBuilderOnImmutable_thenImmutableMapIsReturned() {
         ImmutableMap<Character, Integer> immutableMap
-                = ImmutableMap.<Character, Integer>builder()
+                = ImmutableMap.<Character, Integer>builder() // syntax!
                 .put('a', 1)
                 .put('b', 2)
                 .put('c', 3)

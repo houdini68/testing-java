@@ -1,4 +1,4 @@
-package corelanguage;
+package core;
 
 import org.junit.Test;
 

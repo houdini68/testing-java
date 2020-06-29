@@ -28,19 +28,19 @@ public class SplitterTest {
     }
 
     @Test
+    public void givenSplitter_whenOmitEmptyStrings_thenEmptyStringsWasRemoved() {
+        assertThat(Splitter.on('|')
+                .omitEmptyStrings()
+                .split("a|b|c|||"))
+                .containsExactly("a", "b", "c");
+    }
+
+    @Test
     public void givenSplitter_whenRegex_thenOK() {
         Pattern digits = Pattern.compile("\\d+");
         assertThat(Splitter.on(digits)
                 .omitEmptyStrings()
                 .split("a90466449b712222543c"))
-                .containsExactly("a", "b", "c");
-    }
-
-    @Test
-    public void givenSplitter_whenOmitEmptyStrings_thenEmptyStringsWasRemoved() {
-        assertThat(Splitter.on('|')
-                .omitEmptyStrings()
-                .split("a|b|c|||"))
                 .containsExactly("a", "b", "c");
     }
 

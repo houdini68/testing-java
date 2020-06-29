@@ -125,5 +125,5 @@ Rudy Vissers(Belgium).
 # Java util
  
 ##### [UtilTest](src/test/java/util/UtilTest.java)
-######mapToBoolean
+###### mapToBoolean
 

@@ -14,7 +14,7 @@ It is an Apache Maven project and it was developed using Intellij Idea.
 
 Rudy Vissers(Belgium).
 
-# Tested on JDK 8 - 81 tests
+# Tested on JDK 8 - 82 tests
 
 ##### [Test Results](TestResults-All_in_testing-java.html)
 
@@ -89,6 +89,8 @@ Rudy Vissers(Belgium).
 # Joda
 
 ##### [PeriodFormatterBuilderTest](src/test/java/api/org/joda/time/format/PeriodFormatterBuilderTest.java)
+##### [SimpleDateFormatToJodaDateTimeFormatTest](src/test/java/api/org/joda/time/format/SimpleDateFormatToJodaDateTimeFormatTest.java)
+###### Migration from java.text.SimpleDateFormat (not thread-safe to org.joda.time.format.DateTimeFormatter thread-safe).
 
 # Mockito
 

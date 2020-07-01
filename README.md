@@ -16,8 +16,6 @@ Rudy Vissers(Belgium).
 
 # Tested on JDK 8 - 82 tests
 
-##### [Test Results](TestResults-All_in_testing-java.html)
-
 # Java lang
 
 ##### [ShutdownHookDemo](src/main/java/api/java/lang/ShutdownHookDemo.java)

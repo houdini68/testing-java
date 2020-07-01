@@ -105,9 +105,9 @@ Rudy Vissers(Belgium).
 
 ##### [Comparisons](src/test/java/core/Comparisons.java)
 
-##### [EnumTest](src/test/java/api/java/core/EnumTest.java)
+##### [EnumTest](src/test/java/core/EnumTest.java)
 
-##### [SwitchTest](src/test/java/api/java/core/SwitchTest.java)
+##### [SwitchTest](src/test/java/core/SwitchTest.java)
 
 # Design patterns
 

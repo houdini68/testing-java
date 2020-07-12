@@ -90,6 +90,10 @@ Rudy Vissers(Belgium).
 ##### [SimpleDateFormatToJodaDateTimeFormatTest](src/test/java/api/org/joda/time/format/SimpleDateFormatToJodaDateTimeFormatTest.java)
 ###### Migration from java.text.SimpleDateFormat (not thread-safe to org.joda.time.format.DateTimeFormatter thread-safe).
 
+# JSONObject
+
+##### [JSONObjectTest](src/test/java/api/org/json/JSONObjectTest.java)
+
 # Mockito
 
 ##### [ArgumentMatchersTest](src/test/java/api/org/mockito/ArgumentMatchersTest.java)

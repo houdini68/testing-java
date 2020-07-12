@@ -120,7 +120,7 @@ Rudy Vissers(Belgium).
 # Spring (to move somewhere else)
 
 #### Wiring of a bean. Java configuration.
-##### [HelloSpringTest](src/test/java/springframework/HelloSpringTest.java)
+##### [HelloSpringTest](src/test/java/springframework/hello/HelloSpringTest.java)
 
 # Java util
  

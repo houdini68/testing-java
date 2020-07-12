@@ -121,6 +121,8 @@ Rudy Vissers(Belgium).
 
 #### Wiring of a bean. Java configuration.
 ##### [HelloSpringTest](src/test/java/springframework/hello/HelloSpringTest.java)
+##### [Hello.java](src/test/java/springframework/hello/Hello.java)
+##### [Config.java](src/test/java/springframework/hello/Config.java)
 
 # Java util
  

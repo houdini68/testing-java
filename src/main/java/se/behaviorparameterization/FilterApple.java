@@ -9,7 +9,7 @@ public class FilterApple {
 
     public List<Apple> filterGreenApplesFirstAttempt(List<Apple> inventory) {
         List<Apple> result = new ArrayList<>();
-        for (Apple apple : inventory) {
+        for (Apple apple : inventory) { // foreach loop - imperative code
             if (GREEN.equals(apple.getColor())) {
                 result.add(apple);
             }

@@ -1,4 +1,4 @@
-package springframework;
+package springframework.hello;
 
 import org.assertj.core.api.Assertions;
 import org.junit.Test;
@@ -17,18 +17,5 @@ public class HelloSpringTest {
     @Test
     public void givenHello_whenCallingSayHello_returnStringHello() {
         Assertions.assertThat(hello.sayHello()).isEqualTo("Hello!");
-    }
-}
-
-class Hello {
-    String sayHello() {
-        return "Hello!";
-    }
-}
-
-class Config {
-    @Bean
-    public Hello helloBean() {
-        return new Hello();
     }
 }

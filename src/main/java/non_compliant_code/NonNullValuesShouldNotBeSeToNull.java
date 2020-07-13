@@ -15,7 +15,7 @@ public class NonNullValuesShouldNotBeSeToNull {
         if (color != null) {
             secondary = null;
         }
-        primary = color; // Noncompliant; "primary" is Nonnull but could be set to null here
+        primary = color; // Non compliant; "primary" is Nonnull but could be set to null here
     }
 
     public NonNullValuesShouldNotBeSeToNull() {

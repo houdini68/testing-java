@@ -10,7 +10,9 @@ public class Engine {
     private final String type;
 
     @JsonCreator(mode = JsonCreator.Mode.PROPERTIES)
-    public Engine(@JsonProperty("id") String id, @JsonProperty("name") String name, @JsonProperty("type") String type) {
+    public Engine(@JsonProperty("id") String id,
+                  @JsonProperty("name") String name,
+                  @JsonProperty("type") String type) {
         this.id = id;
         this.name = name;
         this.type = type;

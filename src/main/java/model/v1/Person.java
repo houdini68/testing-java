@@ -9,16 +9,18 @@ public class Person {
     private String sex;
     private String nrn;
 
-    public Person(String firstName, String lastName, int age, String sex, String nrn) {
+    public Person() {}
+
+    public Person(final String firstName,
+                  final String lastName,
+                  final int age,
+                  final String sex,
+                  final String nrn) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.age = age;
         this.sex = sex;
         this.nrn = nrn;
-    }
-
-    public Person() {
-
     }
 
     public String getFirstName() {

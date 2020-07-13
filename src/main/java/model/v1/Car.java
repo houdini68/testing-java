@@ -10,7 +10,10 @@ public class Car {
     final Engine engine;
 
     @JsonCreator(mode = JsonCreator.Mode.PROPERTIES)
-    public Car(@JsonProperty("id") String id, @JsonProperty("brand") String brand, @JsonProperty("type") String type, @JsonProperty("engine") Engine engine) {
+    public Car(@JsonProperty("id") String id,
+               @JsonProperty("brand") String brand,
+               @JsonProperty("type") String type,
+               @JsonProperty("engine") Engine engine) {
         this.id = id;
         this.brand = brand;
         this.type = type;

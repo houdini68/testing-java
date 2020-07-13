@@ -35,6 +35,13 @@ public class BehaviorParameterizationTest {
 
     @Test
     public void filterGreenApplesAttempt2() {
+        List<Apple> result = filterApple.filterApplesByColorAttempt2(apples, GREEN);
+        Assertions.assertThat(result).contains(greenApple);
+        Assertions.assertThat(result).doesNotContain(redApple);
+    }
+
+    @Test
+    public void filterApplesByWeightAttempt2() {
         List<Apple> result = filterApple.filterApplesByWeightAttempt2(apples, 10);
         Assertions.assertThat(result).contains(greenApple);
         Assertions.assertThat(result).contains(redApple);

@@ -14,24 +14,30 @@ public class BehaviorParameterizationTest {
 
     List<Apple> apples;
 
-    Apple green;
-    Apple red;
+    Apple greenApple;
+    Apple redApple;
     FilterApple filterApple;
 
     @Before
     public void setUp() {
-        green = new Apple(GREEN);
-        red = new Apple(RED);
-        apples = ImmutableList.of(green, red);
+        greenApple = new Apple(GREEN, 20);
+        redApple = new Apple(RED, 35);
+        apples = ImmutableList.of(greenApple, redApple);
         filterApple = new FilterApple();
     }
 
     @Test
-    public void filterGreenApplesFirstAttempt() {
-        List<Apple> result = filterApple.filterGreenApplesFirstAttempt(apples);
-        Assertions.assertThat(result).contains(green);
-        Assertions.assertThat(result).doesNotContain(red);
+    public void filterGreenApplesAttempt1() {
+        List<Apple> result = filterApple.filterGreenApplesAttempt1(apples);
+        Assertions.assertThat(result).contains(greenApple);
+        Assertions.assertThat(result).doesNotContain(redApple);
     }
 
+    @Test
+    public void filterGreenApplesAttempt2() {
+        List<Apple> result = filterApple.filterApplesByWeightAttempt2(apples, 10);
+        Assertions.assertThat(result).contains(greenApple);
+        Assertions.assertThat(result).contains(redApple);
+    }
 }
 

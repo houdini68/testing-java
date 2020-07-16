@@ -4,6 +4,10 @@ import com.google.common.collect.ImmutableList;
 import org.assertj.core.api.Assertions;
 import org.junit.Before;
 import org.junit.Test;
+import se.behaviorparameterization.filter.FilterApple;
+import se.behaviorparameterization.predicate.AppleGreenColorPredicate;
+import se.behaviorparameterization.predicate.AppleHeavyWeightPredicate;
+import se.behaviorparameterization.predicate.AppleRedAndHeavyPredicate;
 
 import java.util.List;
 
@@ -53,6 +57,19 @@ public class FilterAppleTest {
         Assertions.assertThat(result).contains(greenApple);
         Assertions.assertThat(result).doesNotContain(redApple);
         result = filterApple.filterApplesByColorOrWeightAttempt3(apples, GREEN, 30, false); // UGLY/HORRIBLE/DON'T DO THIS!!!
+        Assertions.assertThat(result).doesNotContain(greenApple);
+        Assertions.assertThat(result).contains(redApple);
+    }
+
+    @Test
+    public void filterApplesByPredicateAttempt4() {
+        List<Apple> result = filterApple.filterApplesByPredicateAttempt4(apples, new AppleGreenColorPredicate()); // behavior is passed
+        Assertions.assertThat(result).contains(greenApple);
+        Assertions.assertThat(result).doesNotContain(redApple);
+        result = filterApple.filterApplesByPredicateAttempt4(apples, new AppleHeavyWeightPredicate()); // behavior is passed
+        Assertions.assertThat(result).doesNotContain(greenApple);
+        Assertions.assertThat(result).contains(redApple);
+        result = filterApple.filterApplesByPredicateAttempt4(apples, new AppleRedAndHeavyPredicate()); // behavior is passed
         Assertions.assertThat(result).doesNotContain(greenApple);
         Assertions.assertThat(result).contains(redApple);
     }

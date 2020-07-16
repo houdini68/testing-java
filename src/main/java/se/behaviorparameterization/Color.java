@@ -1,3 +1,3 @@
 package se.behaviorparameterization;
 
-enum Color {RED, GREEN}
+public enum Color {RED, GREEN}

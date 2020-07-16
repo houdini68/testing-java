@@ -1,4 +1,8 @@
-package se.behaviorparameterization;
+package se.behaviorparameterization.filter;
+
+import se.behaviorparameterization.Apple;
+import se.behaviorparameterization.Color;
+import se.behaviorparameterization.predicate.ApplePredicate;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -18,7 +22,7 @@ public class FilterApple {
     }
 
     public List<Apple> filterApplesByColorAttempt2(List<Apple> inventory,
-                                                          Color color) {
+                                                   Color color) {
         List<Apple> result = new ArrayList<>();
         for (Apple apple : inventory) { // if more filters have to be created the loop is duplicated
             if (apple.getColor().equals(color)) { // color is a parameter
@@ -29,7 +33,7 @@ public class FilterApple {
     }
 
     public List<Apple> filterApplesByWeightAttempt2(List<Apple> inventory,
-                                                           int weight) {
+                                                    int weight) {
         List<Apple> result = new ArrayList<>();
         for (Apple apple : inventory) { // if more filters have to be created the loop is duplicated
             if (apple.getWeight() > weight) { // weight is a parameter
@@ -40,13 +44,24 @@ public class FilterApple {
     }
 
     public List<Apple> filterApplesByColorOrWeightAttempt3(List<Apple> inventory,
-                                                                  Color color,
-                                                                  int weight,
-                                                                  boolean flag) {
+                                                           Color color,
+                                                           int weight,
+                                                           boolean flag) {
         List<Apple> result = new ArrayList<>();
         for (Apple apple : inventory) {
             if ((flag && apple.getColor().equals(color))
                     || (!flag && apple.getWeight() > weight)) { // UGLY/HORRIBLE/DON'T DO THIS!!!
+                result.add(apple);
+            }
+        }
+        return result;
+    }
+
+    public List<Apple> filterApplesByPredicateAttempt4(List<Apple> inventory,
+                                                       ApplePredicate p) {
+        List<Apple> result = new ArrayList<>();
+        for (Apple apple : inventory) {
+            if (p.test(apple)) {
                 result.add(apple);
             }
         }

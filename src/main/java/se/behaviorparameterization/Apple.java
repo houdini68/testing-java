@@ -1,22 +1,33 @@
 package se.behaviorparameterization;
 
+import se.behaviorparameterization.formatter.AppleFancyFormatter;
+import se.behaviorparameterization.formatter.AppleSimpleFormatter;
+
 import java.util.Objects;
 
-class Apple {
-    final Color color;
-    final int weight;
+public class Apple {
+    private final Color color;
+    private final int weight;
 
-    Apple(final Color color, final int weight) {
+    public Apple(final Color color, final int weight) {
         this.color = color;
         this.weight = weight;
     }
 
-    Color getColor() {
+    public Color getColor() {
         return color;
     }
 
     public int getWeight() {
         return weight;
+    }
+
+    String printApple() {
+        return new AppleSimpleFormatter().accept(this);
+    }
+
+    String prettyPrintApple() {
+        return new AppleFancyFormatter().accept(this);
     }
 
     @Override

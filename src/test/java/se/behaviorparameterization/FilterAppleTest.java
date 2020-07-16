@@ -10,7 +10,7 @@ import java.util.List;
 import static se.behaviorparameterization.Color.GREEN;
 import static se.behaviorparameterization.Color.RED;
 
-public class BehaviorParameterizationTest {
+public class FilterAppleTest {
 
     List<Apple> apples;
 
@@ -57,4 +57,3 @@ public class BehaviorParameterizationTest {
         Assertions.assertThat(result).contains(redApple);
     }
 }
-

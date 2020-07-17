@@ -16,7 +16,9 @@ It is an Apache Maven project and it was developed using Intellij Idea.
 
 Rudy Vissers(Belgium).
 
-# Tested on JDK 8 - 82 tests
+# Tested on JDK 8 - 97 tests
+
+# To be documented:guava-cache
 
 # Java lang
 

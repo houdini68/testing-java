@@ -31,7 +31,7 @@ public class JSONObjectTest {
 
         fields.put("reporter", reporter);
 
-        fields.put("customfield_14370", "GCIT2020-3a4");
+        fields.put("customfield_14370", "GCIT2020-34");
 
         JSONObject root = new JSONObject();
         root.put("fields", fields);

@@ -1,5 +1,7 @@
 # Testing the Java ecosystem
 
+This file is cached into your browser. Reload to get latest changes.
+
 Testing the APIs needed by a modern Java developer.
 
 How many times are you stuck at customer site because you don't remember the usage of a class or a method from a well known api?
@@ -116,10 +118,19 @@ Rudy Vissers(Belgium).
 ##### [ClassSingletonTest](src/test/java/dp/singleton/ClassSingletonTest.java)
 ##### [EnumSingletonTest](src/test/java/dp/singleton/EnumSingletonTest.java)
 
-# Java 8
+# Behavior Parameterization - Java 8
 
 ##### [FilterAppleTest](src/test/java/se/behaviorparameterization/FilterAppleTest.java)
+###### functional interface:
+##### [ApplePredicate](src/main/java/se/behaviorparameterization/predicate/ApplePredicate.java)
+##### [AppleGreenColorPredicate](src/main/java/se/behaviorparameterization/predicate/AppleGreenColorPredicate.java)
+##### [AppleHeavyWeightPredicate](src/main/java/se/behaviorparameterization/predicate/AppleHeavyWeightPredicate.java)
+##### [AppleRedAndHeavyPredicate](src/main/java/se/behaviorparameterization/predicate/AppleRedAndHeavyPredicate.java)
 ##### [AppleTest](src/test/java/se/behaviorparameterization/AppleTest.java)
+###### functional interface:
+##### [AppleFormatter](src/main/java/se/behaviorparameterization/formatter/AppleFormatter.java)
+##### [AppleSimpleFormatter](src/main/java/se/behaviorparameterization/formatter/AppleSimpleFormatter.java)
+##### [AppleFancyFormatter](src/main/java/se/behaviorparameterization/formatter/AppleFancyFormatter.java)
 
 # Spring (to move somewhere else)
 

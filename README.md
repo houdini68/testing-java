@@ -118,8 +118,8 @@ Rudy Vissers(Belgium).
 
 # Java 8
 
-##### [BehaviorParameterizationTest](src/test/java/se/behaviorparameterization/BehaviorParameterizationTest.java)
-##### [FilterApple](src/main/java/se/behaviorparameterization/FilterApple.java)
+##### [FilterAppleTest](src/test/java/se/behaviorparameterization/FilterAppleTest.java)
+##### [AppleTest](src/test/java/se/behaviorparameterization/AppleTest.java)
 
 # Spring (to move somewhere else)
 

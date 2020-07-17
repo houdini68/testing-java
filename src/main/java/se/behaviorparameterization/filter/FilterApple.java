@@ -57,8 +57,8 @@ public class FilterApple {
         return result;
     }
 
-    public List<Apple> filterApplesByPredicateAttempt4(List<Apple> inventory,
-                                                       ApplePredicate p) {
+    public List<Apple> filterApplesByPredicate(List<Apple> inventory,
+                                               ApplePredicate p) {
         List<Apple> result = new ArrayList<>();
         for (Apple apple : inventory) {
             if (p.test(apple)) {

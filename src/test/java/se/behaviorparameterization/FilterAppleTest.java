@@ -7,6 +7,7 @@ import org.junit.Test;
 import se.behaviorparameterization.filter.FilterApple;
 import se.behaviorparameterization.predicate.AppleGreenColorPredicate;
 import se.behaviorparameterization.predicate.AppleHeavyWeightPredicate;
+import se.behaviorparameterization.predicate.ApplePredicate;
 import se.behaviorparameterization.predicate.AppleRedAndHeavyPredicate;
 
 import java.util.List;
@@ -63,13 +64,25 @@ public class FilterAppleTest {
 
     @Test
     public void filterApplesByPredicateAttempt4() {
-        List<Apple> result = filterApple.filterApplesByPredicateAttempt4(apples, new AppleGreenColorPredicate()); // behavior is passed
+        List<Apple> result = filterApple.filterApplesByPredicate(apples, new AppleGreenColorPredicate()); // behavior is passed
         Assertions.assertThat(result).contains(greenApple);
         Assertions.assertThat(result).doesNotContain(redApple);
-        result = filterApple.filterApplesByPredicateAttempt4(apples, new AppleHeavyWeightPredicate()); // behavior is passed
+        result = filterApple.filterApplesByPredicate(apples, new AppleHeavyWeightPredicate()); // behavior is passed
         Assertions.assertThat(result).doesNotContain(greenApple);
         Assertions.assertThat(result).contains(redApple);
-        result = filterApple.filterApplesByPredicateAttempt4(apples, new AppleRedAndHeavyPredicate()); // behavior is passed
+        result = filterApple.filterApplesByPredicate(apples, new AppleRedAndHeavyPredicate()); // behavior is passed
+        Assertions.assertThat(result).doesNotContain(greenApple);
+        Assertions.assertThat(result).contains(redApple);
+    }
+
+    @Test
+    public void filterApplesByPredicateAnonymousClassAttempt5() {
+        List<Apple> result = filterApple.filterApplesByPredicate(apples, new ApplePredicate() {
+            @Override
+            public boolean test(Apple apple) {
+                return RED.equals(apple.getColor());
+            }
+        }); // behavior is passed
         Assertions.assertThat(result).doesNotContain(greenApple);
         Assertions.assertThat(result).contains(redApple);
     }

@@ -4,19 +4,18 @@ This file is cached into your browser. Reload to get latest changes.
 
 Testing the APIs needed by a modern Java developer.
 
-How many times are you stuck at customer site because you don't remember the usage of a class or a method from a well known api?
-
-Javadoc is sometimes complicated. Not easy to read. You want an example.
+How many times are you in search of the usage of a class or a method from a well known api?
+Javadoc is sometimes complicated and not easy to read. You want an example.
 
 I have decided to document the classes/APIs that a modern developer has a great chance to meet at customer site.
 
-Each time I visit a site (Stackoverflow) to get some help on programming or I made some investigations on a specific topic I will try to create a test that will be documented here.
+Each time I visit a site (often Stackoverflow) to get some help on programming or I made some investigations on a specific topic I will try to create a test that will be documented here.
 
 It is an Apache Maven project and it was developed using Intellij Idea.
 
-Rudy Vissers(Belgium).
+Rudy Vissers [Belgium]
 
-# Tested on JDK 8 - 97 tests
+# Tested on JDK 8 - 96 tests
 
 # To be documented:guava-cache
 
@@ -109,10 +108,11 @@ Rudy Vissers(Belgium).
 
 # Java core
 
+##### [CollectionsJava8Test](src/test/java/core/CollectionsJava8Test.java)
+* givenMethodReturningListNotGeneric_whenAssigningToGenericList_thenOK
+* given3Lists_thenMergeLists
 ##### [Comparisons](src/test/java/core/Comparisons.java)
-
 ##### [EnumTest](src/test/java/core/EnumTest.java)
-
 ##### [SwitchTest](src/test/java/core/SwitchTest.java)
 
 # Design patterns

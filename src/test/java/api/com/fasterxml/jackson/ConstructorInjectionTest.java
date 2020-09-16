@@ -36,7 +36,7 @@ public class ConstructorInjectionTest {
         Car car = new ObjectMapper().readValue("{\"id\":\"id_car\",\"brand\":\"brand\",\"type\":\"type\",\"engine\":{\"id\":\"id_engine\",\"name\":\"name_engine\",\"type\":\"type_engine\"}}", Car.class);
         assertThat(car.getId()).isEqualTo(ID_CAR);
         assertThat(car.getBrand()).isEqualTo(BRAND);
-        assertThat(car.getType()).isEqualTo("type");
+        assertThat(car.getType()).isEqualTo(TYPE);
         assertThat(car.getEngine().getId()).isEqualTo(ID_ENGINE);
         assertThat(car.getEngine().getName()).isEqualTo(NAME_ENGINE);
         assertThat(car.getEngine().getType()).isEqualTo(TYPE_ENGINE);

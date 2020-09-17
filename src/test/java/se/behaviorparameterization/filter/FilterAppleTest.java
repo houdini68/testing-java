@@ -1,10 +1,10 @@
-package se.behaviorparameterization;
+package se.behaviorparameterization.filter;
 
 import com.google.common.collect.ImmutableList;
 import org.assertj.core.api.Assertions;
 import org.junit.Before;
 import org.junit.Test;
-import se.behaviorparameterization.filter.FilterApple;
+import se.behaviorparameterization.Apple;
 import se.behaviorparameterization.predicate.AppleGreenColorPredicate;
 import se.behaviorparameterization.predicate.AppleHeavyWeightPredicate;
 import se.behaviorparameterization.predicate.ApplePredicate;

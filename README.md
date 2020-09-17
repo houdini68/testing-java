@@ -53,8 +53,8 @@ Rudy Vissers [Belgium]
 
 ### Behavior Parameterization - Java 8
 
-##### [FilterApple](src/main/java/se/behaviorparameterization/FilterApple.java)
-##### [FilterAppleTest](src/test/java/se/behaviorparameterization/FilterAppleTest.java)
+##### [FilterApple](src/main/java/se/behaviorparameterization/filter/FilterApple.java)
+##### [FilterAppleTest](src/test/java/se/behaviorparameterization/filter/FilterAppleTest.java)
 ###### functional interface:
 ##### [ApplePredicate](src/main/java/se/behaviorparameterization/predicate/ApplePredicate.java)
 ##### [AppleGreenColorPredicate](src/main/java/se/behaviorparameterization/predicate/AppleGreenColorPredicate.java)

@@ -6,7 +6,7 @@ import org.junit.Test;
 public class IntegerTest {
 
     @Test
-    public void name() {
+    public void givenNumericStringHavingZeroNotSignificant_whenParseInt_thenOK() {
         Assertions.assertThat(Integer.parseInt("00000")).isEqualTo(0);
     }
 }

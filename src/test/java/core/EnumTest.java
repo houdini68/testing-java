@@ -9,33 +9,32 @@ import java.util.EnumSet;
 import java.util.List;
 import java.util.stream.Collectors;
 
+import static org.assertj.core.api.Assertions.*;
 import static org.assertj.core.api.Assertions.assertThat;
 
 public class EnumTest {
 
     @Test
     public void givenEnumNotInitialized_whenEqualSign_thenEqualitytIsSafe() {
-        PizzaV1 testPz = new PizzaV1();
-        // enum PizzaStatus is NOT initialized
+        PizzaV1 testPz = new PizzaV1(); // enum PizzaStatus is NOT initialized
         assertThat(testPz.getStatus() != PizzaV1.PizzaStatus.DELIVERED).isTrue();
     }
 
     @Test(expected = NullPointerException.class)
     public void givenEnumNotInitialized_whenEqualMethod_thenEqualitytIsNotSafe() {
-        PizzaV1 testPz = new PizzaV1();
-        // enum PizzaStatus is NOT initialized
+        PizzaV1 testPz = new PizzaV1(); // enum PizzaStatus is NOT initialized
         assertThat(!testPz.getStatus().equals(PizzaV1.PizzaStatus.DELIVERED));
     }
 
     @Test
     public void givenEnum_whenEqualSign_thenCompileTimeSafety() {
         PizzaV1 testPz = new PizzaV1();
+
         testPz.setStatus(PizzaV1.PizzaStatus.ORDERED);
         // comparison apples and oranges
         if (testPz.getStatus().equals(Color.GREEN)) ; // compile time safety not achieved
-        // comparison apples and oranges
         // uncomment the following line to see the effect
-//         if(testPz.getStatus() == TestColor.GREEN); // does not compile
+//         if(testPz.getStatus() == Color.GREEN); // does not compile
     }
 
     @Test
@@ -71,8 +70,8 @@ public class EnumTest {
     public void givenEnum_whenToString_thenOK() {
         PizzaV2 testPz = new PizzaV2();
         testPz.setStatus(PizzaV2.PizzaStatus.ORDERED);
-        Assertions.assertThat(testPz.getStatus().toString()).isEqualTo("ORDERED");
-        Assertions.assertThat(testPz.getStatus().name()).isEqualTo("ORDERED");
+        assertThat(testPz.getStatus().toString()).isEqualTo("ORDERED");
+        assertThat(testPz.getStatus().name()).isEqualTo("ORDERED");
     }
 
     @Test
@@ -168,7 +167,6 @@ class PizzaV2 {
 
     enum PizzaStatus {
         ORDERED(5) { // constructor
-
             @Override
             public boolean isOrdered() {
                 return true;
@@ -189,6 +187,10 @@ class PizzaV2 {
 
         private int timeToDelivery;
 
+        PizzaStatus(int timeToDelivery) {
+            this.timeToDelivery = timeToDelivery;
+        }
+
         public boolean isOrdered() {
             return false;
         }
@@ -204,10 +206,6 @@ class PizzaV2 {
         public int getTimeToDelivery() {
             return timeToDelivery;
         }
-
-        PizzaStatus(int timeToDelivery) {
-            this.timeToDelivery = timeToDelivery;
-        }
     }
 
     boolean isDeliverable() {
@@ -222,8 +220,7 @@ class PizzaV2 {
 
     static List<PizzaV2> getAllUndeliveredPizzas(List<PizzaV2> input) {
         return input.stream()
-                .filter(
-                        pizzaV2 -> undeliveredPizzaStatuses.contains(pizzaV2.getStatus()))
+                .filter(pizzaV2 -> undeliveredPizzaStatuses.contains(pizzaV2.getStatus()))
                 .collect(Collectors.toList());
     }
 

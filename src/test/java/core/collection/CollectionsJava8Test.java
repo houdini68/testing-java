@@ -30,7 +30,10 @@ public class CollectionsJava8Test {
                         .flatMap(Collection::stream)
                         .collect(Collectors.toList());
         assertThat(concatenation.size()).isEqualTo(list1.size() + list2.size() + list3.size());
-        assertThat(concatenation.stream()).contains("item1", "item2", "item3", "item4", "item5", "item6", "item7", "item8", "item9");
+        assertThat(concatenation.stream()).contains(
+                "item1", "item2", "item3",
+                "item4", "item5", "item6",
+                "item7", "item8", "item9");
         assertThat(list1.size()).isEqualTo(3);
         assertThat(list1.stream()).contains("item1", "item2", "item3");
         assertThat(list2.size()).isEqualTo(3);

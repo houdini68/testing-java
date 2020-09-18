@@ -12,24 +12,19 @@ public class Person {
         this.car = car;
     }
 
-    public String getCarInsuranceName(Person person) {
-        if (person != null) { // defensive checking
-            Car car = person.getCar();
-            if (car != null) { // defensive checking
-                Insurance insurance = car.getInsurance();
-                if (insurance != null) { // defensive checking
-                    return insurance.getName();
-                }
+    public String getCarInsuranceName() {
+        Car car = getCar();
+        if (car != null) { // defensive checking
+            Insurance insurance = car.getInsurance();
+            if (insurance != null) { // defensive checking
+                return insurance.getName();
             }
         }
         return UNKNOWN;
     }
 
-    public String getCarInsuranceNameAvoidNestedBlocks(Person person) {
-        if (person == null) {
-            return UNKNOWN;
-        }
-        Car car = person.getCar();
+    public String getCarInsuranceNameAvoidNestedBlocks() {
+        Car car = getCar();
         if (car == null) {
             return UNKNOWN;
         }

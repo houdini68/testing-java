@@ -15,15 +15,14 @@ public class AbsenceOfValueByNullTest {
     }
 
     @Test
-    public void givenPersonIsNull_whenDefensiveChecking_thenOK() {
+    public void givenCarIsNullAndGetInsuranceName_whenDefensiveChecking_thenOK() {
         Person person = new Person();
-        assertThat(person.getCarInsuranceName(person)).isEqualTo(UNKNOWN);
+        assertThat(person.getCarInsuranceName()).isEqualTo(UNKNOWN);
     }
 
     @Test
     public void givenPersonIsNull_whenDefensiveCheckingAndAvoidNestedBlocks_thenOK() {
         Person person = new Person();
-        assertThat(person.getCarInsuranceNameAvoidNestedBlocks(person)).isEqualTo(UNKNOWN);
+        assertThat(person.getCarInsuranceNameAvoidNestedBlocks()).isEqualTo(UNKNOWN);
     }
-
 }

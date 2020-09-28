@@ -1,6 +1,6 @@
-package core.collection;
+package model.v1;
 
-class Course {
+public class Course {
     private final int id;
     private final String name;
 

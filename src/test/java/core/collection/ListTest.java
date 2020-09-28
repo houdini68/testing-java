@@ -10,15 +10,7 @@ import java.util.stream.Stream;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
-public class CollectionsJava8Test {
-
-    @Test
-    public void givenMethodReturningListNotGeneric_whenAssigningToGenericList_thenOK() {
-        List<Course> courses = new School().getCourses();
-        assertThat(courses.size()).isEqualTo(2);
-        assertThat(courses.get(0).getId()).isEqualTo(1);
-        assertThat(courses.get(0).getName()).isEqualTo("mathematics");
-    }
+public class ListTest {
 
     @Test
     public void given3Lists_thenMergeLists() {

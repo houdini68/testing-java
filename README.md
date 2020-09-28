@@ -16,13 +16,12 @@ It is an Apache Maven project, and it was developed using Intellij Idea.
 Rudy Vissers [Belgium]
 
 ## Tested on JDK 8 - 101 tests
-#### Java 8 Optional
 #### To be documented:guava-cache
 
 # Java lang
 
-##### [BoxingUnboxingTest](src/test/java/api/java/lang/BoxingUnboxingTest.java)
 ##### [IntegerTest](src/test/java/api/java/lang/IntegerTest.java)
+##### [BoxingUnboxingTest](src/test/java/api/java/lang/BoxingUnboxingTest.java)
 ##### [ShutdownHookDemo](src/main/java/api/java/lang/ShutdownHookDemo.java) 
 
 # Java core
@@ -31,10 +30,10 @@ Rudy Vissers [Belgium]
 ##### [EnumTest](src/test/java/core/EnumTest.java)
 ##### [SwitchTest](src/test/java/core/SwitchTest.java)
 
-### Collections
-##### [CollectionsJava8Test](src/test/java/core/collection/CollectionsJava8Test.java)
-* givenMethodReturningListNotGeneric_whenAssigningToGenericList_thenOK
-* given3Lists_thenMergeLists
+# Collections
+##### [ListTest](src/test/java/core/collection/ListTest.java)
+* merge lists
+##### [MapTest](src/test/java/api/java/util/MapTest.java)
 
 # Java Util 
 
@@ -42,16 +41,22 @@ Rudy Vissers [Belgium]
 ##### [UtilTest](src/test/java/util/UtilTest.java)
 ###### mapToBoolean
 
-# Java 8
+# Lamda
 
 ##### [BiConsumerTest](src/test/java/api/java/util/function/BiConsumerTest.java)
 ##### [BiFunctionTest](src/test/java/api/java/util/function/BiFunctionTest.java)
 
+# Streams
+
 ##### [FlatMapTest](src/test/java/api/java/util/stream/FlatMapTest.java) 
 
-##### [MapTest](src/test/java/api/java/util/MapTest.java)
+# Optional
+#### Without Optional (don't do that!)
+##### [AbsenceOfValueByNull](src/test/java/api/java/util/optional/absenceofvaluebynull/AbsenceOfValueByNullTest.java)
+#### With Optional
+##### [OptionalTest](src/test/java/api/java/util/optional/OptionalTest.java) 
 
-### Behavior Parameterization - Java 8
+# Behavior Parameterization
 
 ##### [FilterApple](src/main/java/se/behaviorparameterization/filter/FilterApple.java)
 ##### [FilterAppleTest](src/test/java/se/behaviorparameterization/filter/FilterAppleTest.java)
@@ -86,13 +91,23 @@ Rudy Vissers [Belgium]
 
 # Guava
 
+#### Passing behaviour
+
 ##### [FunctionsTest](src/test/java/api/com/google/common/base/FunctionsTest.java)
-##### [FunctionTest](src/test/java/api/com/google/common/base/FunctionTest.java) 
+##### [FunctionTest](src/test/java/api/com/google/common/base/FunctionTest.java)
+
+#### Joiner, Splitter
+
 ##### [JoinerTest](src/test/java/api/com/google/common/base/JoinerTest.java)
-##### [MoreObjectsTest](src/test/java/api/com/google/common/base/MoreObjectsTest.java)
 ##### [SplitterTest](src/test/java/api/com/google/common/base/SplitterTest.java)
+
+#### Collections 
 ##### [FluentIterableTest](src/test/java/api/com/google/common/collect/FluentIterableTest.java)
 ##### [ImmutableMapTest](src/test/java/api/com/google/common/collect/ImmutableMapTest.java)
+
+#### Misc
+##### [MoreObjectsTest](src/test/java/api/com/google/common/base/MoreObjectsTest.java)
+
 
 # Apache lang3
 

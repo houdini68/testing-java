@@ -49,19 +49,14 @@ public class JoinerTest {
 
     @Test
     public void givenJoinerOnMap_thenOK() {
-        String expected = "key1=value1" +
-                "#key2=value2" +
-                "#key3=value3" +
-                "#key4=value4";
         Map<String, String> map = Maps.newLinkedHashMap();
         map.put("key1", "value1");
         map.put("key2", "value2");
         map.put("key3", "value3");
         map.put("key4", "value4");
-        String actual = Joiner.on("#")
+        assertThat(Joiner.on("#")
                 .withKeyValueSeparator("=")
-                .join(map);
-        assertThat(actual)
-                .isEqualTo(expected);
+                .join(map))
+                .isEqualTo("key1=value1#key2=value2#key3=value3#key4=value4");
     }
 }

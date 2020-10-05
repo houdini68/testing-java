@@ -14,6 +14,7 @@ Each time I visit a site (Stackoverflow) to get some help on programming, or I m
 It is an Apache Maven project, and it was developed using Intellij Idea.
 
 Rudy Vissers [Belgium]
+-
 
 ## Tested on JDK 8 - 101 tests
 #### To be documented:guava-cache
@@ -148,4 +149,10 @@ Rudy Vissers [Belgium]
 ##### [HelloSpringTest](src/test/java/springframework/hello/HelloSpringTest.java)
 ##### [Hello.java](src/test/java/springframework/hello/Hello.java)
 ##### [Config.java](src/test/java/springframework/hello/Config.java)
+
+## Cheat sheet
+##### Functional Interfaces
+Class | Method | Input | Output
+-------------- | ------------- | -------------  | -------------
+BiFunction<T, U, R> | apply | T, U | R
 

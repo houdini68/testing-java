@@ -41,6 +41,9 @@ Rudy Vissers [Belgium]
 ##### [Util](src/main/java/util/Util.java)
 ##### [UtilTest](src/test/java/util/UtilTest.java)
 ###### mapToBoolean
+##### [StringUtil](src/main/java/util/StringUtil.java)
+##### [StringUtilTest](src/test/java/util/StringUtilTest.java)
+###### Map<Character, Integer> countDuplicateCharacters(String str)
 
 # Lamda
 

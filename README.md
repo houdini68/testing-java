@@ -44,8 +44,9 @@ Rudy Vissers [Belgium]
 ##### [StringUtil](src/main/java/util/StringUtil.java)
 ##### [StringUtilTest](src/test/java/util/StringUtilTest.java)
 ###### Map<Character, Integer> countDuplicateCharacters(String str)
+###### Map<Character, Long> countDuplicateCharactersStream(String str) {
 
-# Lamda
+# Labmda
 
 ##### [BiConsumerTest](src/test/java/api/java/util/function/BiConsumerTest.java)
 ##### [BiFunctionTest](src/test/java/api/java/util/function/BiFunctionTest.java)

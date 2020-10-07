@@ -1,5 +1,6 @@
 package util;
 
+import org.junit.Before;
 import org.junit.Test;
 
 import java.util.Map;
@@ -9,8 +10,17 @@ import static org.assertj.core.api.Assertions.assertThat;
 public class StringUtilTest {
 
     @Test
-    public void givenStringNotNull_whenCountDuplicateCharacters_thenOK() {
-        Map<Character, Integer> result = new StringUtil().countDuplicateCharacters("HelloWorld!");
+    public void givenStringNotNull_whenCountDuplicateCharactersForeach_thenOK() {
+        Map<Character, Long> result = new StringUtil().countDuplicateCharactersForeach("HelloWorld!");
+        assertCountOK(result);
+    }
+    @Test
+    public void givenStringNotNull_whenCountDuplicateCharactersStream_thenOK() {
+        Map<Character, Long> result = new StringUtil().countDuplicateCharactersStream("HelloWorld!");
+        assertCountOK(result);
+    }
+
+    private void assertCountOK(Map<Character, Long> result) {
         assertThat(result).isNotNull();
         assertThat(result).isNotEmpty();
         assertThat(result.get('H')).isEqualTo(1);
@@ -25,14 +35,27 @@ public class StringUtilTest {
     }
 
     @Test
-    public void givenStringNull_whenCountDuplicateCharacters_thenResultIsNull() {
-        Map<Character, Integer> result = new StringUtil().countDuplicateCharacters(null);
+    public void givenStringNull_whenCountDupCharForeach_thenResultIsNull() {
+        Map<Character, Long> result = new StringUtil().countDuplicateCharactersForeach(null);
         assertThat(result).isNull();
     }
 
     @Test
-    public void givenEmptyStringNull_whenCountDuplicateCharacters_thenResultIsEmpty() {
-        Map<Character, Integer> result = new StringUtil().countDuplicateCharacters("");
+    public void givenEmptyStringNull_whenCountDupCharForEach_thenResultIsEmpty() {
+        Map<Character, Long> result = new StringUtil().countDuplicateCharactersForeach("");
+        assertThat(result).isNotNull();
+        assertThat(result).isEmpty();
+    }
+
+    @Test
+    public void givenStringNull_whenCountDupCharStream_thenResultIsNull() {
+        Map<Character, Long> result = new StringUtil().countDuplicateCharactersStream(null);
+        assertThat(result).isNull();
+    }
+
+    @Test
+    public void givenEmptyStringNull_whenCountDupCharStream_thenResultIsEmpty() {
+        Map<Character, Long> result = new StringUtil().countDuplicateCharactersStream("");
         assertThat(result).isNotNull();
         assertThat(result).isEmpty();
     }

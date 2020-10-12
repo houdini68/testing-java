@@ -12,7 +12,6 @@ public final class ClassSingleton {
         if (INSTANCE == null) {
             INSTANCE = new ClassSingleton();
         }
-
         return INSTANCE;
     }
 

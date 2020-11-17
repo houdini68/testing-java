@@ -12,11 +12,11 @@ public class BiConsumerTest {
 
     /**
      * A Consumer can mutate a reference to an object.
-     * A consummer does consume/use two objects and returns nothing.
+     * A bi consummer does consume/use two objects and returns nothing.
      */
 
     @Test
-    public void givenBiConsumer_whenObjectsPersonMuted_thenObjectsPersonMuted() {
+    public void givenBiConsumer_whenObjectsMutated_thenObjectsMutated() {
         BiConsumer<Person, Person> biConsumer = (p1, p2) -> {
             p1.setFirstName("fn1"); p1.setLastName("ln1"); p1.setAge(25); p1.setSex("m"); p1.setNrn("nrn1");
             p2.setFirstName("fn2"); p2.setLastName("ln2"); p2.setAge(30); p2.setSex("f"); p2.setNrn("nrn2");

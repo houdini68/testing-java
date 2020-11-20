@@ -21,7 +21,7 @@ Rudy Vissers [Belgium]
 -
 The following list was automatically generated:
 -
-[alg/BinarySearch.java](./src/main/java/alg/BinarySearch.java)
+##### [alg/BinarySearch.java](./src/main/java/alg/BinarySearch.java)
 [alg/BinarySearchTest.java](./src/test/java/alg/BinarySearchTest.java)
 [api/com/fasterxml/jackson/ConstructorInjectionTest.java](./src/test/java/api/com/fasterxml/jackson/ConstructorInjectionTest.java)
 [api/com/google/common/base/FunctionsTest.java](./src/test/java/api/com/google/common/base/FunctionsTest.java)

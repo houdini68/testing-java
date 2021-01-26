@@ -92,6 +92,8 @@ The following list was automatically generated:
 ##### [springframework/hello/Config.java](./src/test/java/springframework/hello/Config.java)
 ##### [springframework/hello/Hello.java](./src/test/java/springframework/hello/Hello.java)
 ##### [springframework/hello/HelloSpringTest.java](./src/test/java/springframework/hello/HelloSpringTest.java)
+##### [util/regex/RegexTest.java](./src/test/java/api/java/util/regex/RegexTest.java)
+##### [util/stream/AnyMatch.java](./src/test/java/api/java/util/stream/AnyMatch.java)
 ##### [util/StringUtil.java](./src/main/java/util/StringUtil.java)
 ##### [util/StringUtilTest.java](./src/test/java/util/StringUtilTest.java)
 ##### [util/Util.java](./src/main/java/util/Util.java)

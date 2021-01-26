@@ -17,7 +17,7 @@ Rudy Vissers [Belgium]
 
 #### [All_in_testing-java](https://htmlpreview.github.io/?https://github.com/houdini68/testing-java/blob/master/All_in_testing-java.html)
 
-108 tests 
+111 tests 
 -
 The following list was automatically generated:
 -

@@ -15,7 +15,7 @@ PS : This file can be cached into your browser. Reload to get the latest changes
 
 Rudy Vissers [Belgium]
 
-#### [All_in_testing-java](https://htmlpreview.github.io/?https://github.com/houdini68/testing-java/blob/master/%20All_in_testing-java.html)
+#### [All_in_testing-java](https://htmlpreview.github.io/?https://github.com/houdini68/testing-java/blob/master/All_in_testing-java.html)
 
 108 tests 
 -

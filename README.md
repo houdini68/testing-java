@@ -17,7 +17,7 @@ Rudy Vissers [Belgium]
 
 #### [All_in_testing-java](https://htmlpreview.github.io/?https://github.com/houdini68/testing-java/blob/master/All_in_testing-java.html)
 
-111 tests 
+120 tests 
 -
 The following list was automatically generated:
 -
@@ -37,6 +37,7 @@ The following list was automatically generated:
 ##### [api/java/nio/file/FilesTest.java](./src/test/java/api/java/nio/file/FilesTest.java)
 ##### [api/java/util/function/BiConsumerTest.java](./src/test/java/api/java/util/function/BiConsumerTest.java)
 ##### [api/java/util/function/BiFunctionTest.java](./src/test/java/api/java/util/function/BiFunctionTest.java)
+##### [api/java/util/function/PredicateTest.java](./src/test/java/api/java/util/function/PredicateTest.java)
 ##### [api/java/util/MapTest.java](./src/test/java/api/java/util/MapTest.java)
 ##### [api/java/util/optional/absenceofvaluebynull/AbsenceOfValueByNullTest.java](./src/test/java/api/java/util/optional/absenceofvaluebynull/AbsenceOfValueByNullTest.java)
 ##### [api/java/util/optional/absenceofvaluebynull/Car.java](./src/main/java/api/java/util/optional/absenceofvaluebynull/Car.java)
@@ -98,3 +99,7 @@ The following list was automatically generated:
 ##### [util/StringUtilTest.java](./src/test/java/util/StringUtilTest.java)
 ##### [util/Util.java](./src/main/java/util/Util.java)
 ##### [util/UtilTest.java](./src/test/java/util/UtilTest.java)
+
+New:
+-
+##### [api/java/util/function/PredicateTest.java](./src/test/java/api/java/util/function/PredicateTest.java)

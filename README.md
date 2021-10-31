@@ -17,5 +17,5 @@ Rudy Vissers [Belgium]
 
 #### [All_in_testing-java](https://htmlpreview.github.io/?https://github.com/houdini68/testing-java/blob/master/All_in_testing-java.html)
 
-120 tests 
+122 tests 
 -

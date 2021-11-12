@@ -11,11 +11,12 @@ Each time I visit a site (Stackoverflow) to get some help on programming, or I m
 
 It is an Apache Maven project, and it was developed using Intellij Idea.
 
-PS : This file can be cached into your browser. Reload to get the latest changes.
+On Intellij, as soon as you executed the tests, you can click on the icon 'Export Test Results...' and then export the results to HTML.
+That will generate a nice HTML documenting the tests.  
+
+Enjoy! 
 
 Rudy Vissers [Belgium]
-
-#### [All_in_testing-java](https://htmlpreview.github.io/?https://github.com/houdini68/testing-java/blob/master/All_in_testing-java.html)
 
 122 tests 
 -

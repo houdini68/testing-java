@@ -21,7 +21,7 @@
         <mockito.version>3.3.3</mockito.version>
         <springframework.version>5.3.14</springframework.version>
         <joda-time.version>2.10.2</joda-time.version>
-        <jackson.version>2.12.1</jackson.version>
+        <jackson.version>2.12.7.1</jackson.version>
     </properties>
 
     <dependencies>

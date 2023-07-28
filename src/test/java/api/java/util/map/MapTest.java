@@ -1,4 +1,4 @@
-package api.java.util;
+package api.java.util.map;
 
 import org.junit.Test;
 

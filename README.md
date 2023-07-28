@@ -18,7 +18,7 @@ Enjoy!
 
 Rudy Vissers [Belgium]
 
-122 tests 
+120 tests 
 -
 mvn clean install on Java 8 -> OK
 

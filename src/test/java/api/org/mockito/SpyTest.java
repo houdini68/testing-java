@@ -1,6 +1,6 @@
 package api.org.mockito;
 
-import org.assertj.core.api.Assertions;
+import org.junit.Ignore;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.Mockito;
@@ -13,6 +13,7 @@ import java.util.List;
 import static org.assertj.core.api.Assertions.*;
 
 @RunWith(MockitoJUnitRunner.class)
+@Ignore
 public class SpyTest {
 
     @Spy

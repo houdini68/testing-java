@@ -13,9 +13,9 @@
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <maven.compiler.source>1.8</maven.compiler.source>
-        <maven.compiler.target>1.8</maven.compiler.target>
-        <guava.version>32.0.0-jre</guava.version>
+        <maven.compiler.source>22</maven.compiler.source>
+        <maven.compiler.target>22</maven.compiler.target>
+        <guava.version>33.1.0-jre</guava.version>
         <junit.version>4.13.1</junit.version>
         <assertj.version>3.15.0</assertj.version>
         <mockito.version>3.3.3</mockito.version>
@@ -35,6 +35,12 @@
             <groupId>commons-lang</groupId>
             <artifactId>commons-lang</artifactId>
             <version>2.6</version>
+        </dependency>
+        <dependency>
+            <groupId>com.google.guava</groupId>
+            <artifactId>guava-parent</artifactId>
+            <version>${guava.version}</version>
+            <type>pom</type>
         </dependency>
         <dependency>
             <groupId>com.google.guava</groupId>

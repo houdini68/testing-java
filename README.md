@@ -20,7 +20,5 @@ Rudy Vissers [Belgium]
 
 120 tests 
 -
-mvn clean install on Java 8 -> OK
-
-mvn clean install on Java 17-> KO
-(I have to look into this)
+Tested on Java 22
+More modern version has to be delived
